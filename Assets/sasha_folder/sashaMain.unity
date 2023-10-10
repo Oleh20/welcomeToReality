@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 98568546}
   - component: {fileID: 98568545}
   - component: {fileID: 98568544}
+  - component: {fileID: 98568547}
   m_Layer: 5
   m_Name: BT2
   m_TagString: Untagged
@@ -256,6 +257,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98568542}
   m_CullTransparentMesh: 1
+--- !u!114 &98568547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98568542}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73d0e4b18a091aa46a54236c8030fa44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rendervideocontroller: {fileID: 0}
+  mainroadtext: []
+  ItActiv: 1
+  bottunMainRoad: 0
+  secondaryRoad: 0
+  DeathRoad: 0
 --- !u!1 &152504418
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,6 +439,7 @@ GameObject:
   - component: {fileID: 428784308}
   - component: {fileID: 428784309}
   - component: {fileID: 428784310}
+  - component: {fileID: 428784311}
   m_Layer: 0
   m_Name: RenderVideoController
   m_TagString: Untagged
@@ -508,6 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023f5762018ef2c428d1f820d7437aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasbt: {fileID: 1886952103}
   player: {fileID: 428784305}
   mainroadstep: 0
 --- !u!114 &428784310
@@ -524,6 +545,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 428784305}
   othersteps: 0
+--- !u!114 &428784311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428784304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b49e33432b61742ad0fd62b76a92e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathstep: 0
+  allvideos:
+  - {fileID: 32900000, guid: 6c02e90170e3eda408d5427251c63932, type: 3}
+  playerrender: {fileID: 428784305}
 --- !u!1 &483391671
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,13 +770,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493039083}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 73d0e4b18a091aa46a54236c8030fa44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rendervideocontroller: {fileID: 0}
+  mainroadtext: []
   ItActiv: 1
   bottunMainRoad: 0
+  secondaryRoad: 0
+  DeathRoad: 0
 --- !u!1 &1275828891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,6 +1066,7 @@ GameObject:
   - component: {fileID: 1834949031}
   - component: {fileID: 1834949030}
   - component: {fileID: 1834949029}
+  - component: {fileID: 1834949032}
   m_Layer: 5
   m_Name: BT1
   m_TagString: Untagged
@@ -1095,19 +1137,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1834949030}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: allfunktion, Assembly-CSharp
-        m_MethodName: MainRoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1834949030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,6 +1176,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834949027}
   m_CullTransparentMesh: 1
+--- !u!114 &1834949032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834949027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73d0e4b18a091aa46a54236c8030fa44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rendervideocontroller: {fileID: 428784304}
+  mainroadtext:
+  - help me
+  - im stack
+  - 'brother i need fucking help  heheh i cutch you '
+  - 
+  - 
+  ItActiv: 1
+  bottunMainRoad: 1
+  secondaryRoad: 0
+  DeathRoad: 0
 --- !u!1 &1886952100
 GameObject:
   m_ObjectHideFlags: 0

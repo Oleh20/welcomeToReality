@@ -5,14 +5,34 @@ using UnityEngine.Video;
 
 public class DeathAfterVideo : MonoBehaviour
 {
-    public VideoClip clip;
+    public int deathstep;
 
+    public VideoClip[] allvideos;
+    public VideoPlayer playerrender;
 
-    public void PlayONLYoneTimeandDeath()
+    private void Start()
     {
+     
+    }
+    public void PlayONLYoneTimeandDeath()
+    {// смерть игрока и откат видео обратно 
 
+        playerrender.clip = allvideos[deathstep];
+        
+
+        StartCoroutine(carutine());
 
     }
+    IEnumerator carutine () {
+        //задержка перед откатом 
+        yield return new WaitForSeconds(5);
+        
+
+
+            GetComponent<MainRoadFunk>().GoBack(); 
+
+
+    ;}
 
 
 

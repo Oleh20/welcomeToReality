@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 
-public class sec : MonoBehaviour
+public class secondaryRoad : MonoBehaviour
 {
     public VideoPlayer player;
     VideoClip[] Videos;
@@ -19,7 +19,7 @@ public class sec : MonoBehaviour
 
 
     public void OtherWay()
-    {
+    {// включение видео с другого масива 
 
         player.clip = Videos[othersteps];
 
