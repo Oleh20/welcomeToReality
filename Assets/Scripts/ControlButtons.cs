@@ -6,7 +6,7 @@ using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LocaleSwitcher : MonoBehaviour
+public class ControlButtons: MonoBehaviour
 {
     public void SwitchToEN()
     {
@@ -23,6 +23,18 @@ public class LocaleSwitcher : MonoBehaviour
     public void LoadMenuScene()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void LoadLanguageSelection()
+    {
+        SceneManager.LoadScene("Language selection");
+    }
+
+    public void QuitGame()
+    {
+
+        Application.Quit();
+
     }
 
 }
