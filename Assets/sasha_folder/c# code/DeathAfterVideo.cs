@@ -25,11 +25,11 @@ public class DeathAfterVideo : MonoBehaviour
     }
     IEnumerator carutine () {
         //задержка перед откатом 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(5) ;
         
 
 
-            GetComponent<MainRoadFunk>().GoBack(); 
+            GetComponent<MainRoadFunk>().GoBack(playerrender.GetComponent<MainRoadFunk>().mainroadstep); 
 
 
     ;}

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,9 +10,9 @@ public class forButton : MonoBehaviour
 {
     public GameObject rendervideocontroller;
 
-     public string[] mainroadtext;
-    public string[] secondtext;
-    public string[] Deathtext;
+    private string[] mainroadtext;
+    private string[] secondtext;
+    private string[] Deathtext;
     private string[] ShouText;
 
     int nummeroftext;
@@ -30,6 +31,29 @@ public class forButton : MonoBehaviour
     private Button button;
     private void Start()
     {
+        mainroadtext = new string[5];
+        Deathtext = new string[5];
+        secondtext = new string[5];
+
+        //масив текстов
+        mainroadtext[0] = "Важка, велів би бути вдома";
+        mainroadtext[1] = "Так ми повинні ";
+        mainroadtext[2] = "так само як вас";
+        mainroadtext[3] = "файно";
+        mainroadtext[4] = "так для цього я приніс цей диплома";
+        // 
+        secondtext[0] = " Час тебе знищити";
+        secondtext[1] = "вас це не стосується";
+        secondtext[2] = "гамно";
+        secondtext[3] = "";
+        secondtext[4] = "";
+        //
+        Deathtext[0] = "17:15";
+        Deathtext[1] = "та мимо проходив";
+        Deathtext[2] = "бувало й краще";
+        Deathtext[3] = "";
+        Deathtext[4] = "";
+
 
         button = GetComponent<Button>();
 
@@ -67,12 +91,20 @@ public class forButton : MonoBehaviour
         }
     }
     void deleteLastRoad()
-    {
+    {// удалить все функции были раньше
 
     button.onClick.RemoveAllListeners();
     
     }
-    public void Random()
+    void SetRandomRoad()
+    {// нужно придумать фунцию чтобы кнопки рандомно назначались 
+       
+
+       
+
+    }
+
+    public void RRandom()
     {
 
     }

@@ -206,19 +206,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 98568545}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 428784310}
-        m_TargetAssemblyTypeName: sec, Assembly-CSharp
-        m_MethodName: OtherWay
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &98568545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,20 +252,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98568542}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 73d0e4b18a091aa46a54236c8030fa44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rendervideocontroller: {fileID: 0}
-  mainroadtext: []
-  secondtext: []
-  Deathtext: []
-  ItActiv: 1
+  rendervideocontroller: {fileID: 428784304}
   bottunMainRoad: 0
-  secondaryRoad: 0
+  secondaryRoad: 1
   DeathRoad: 0
-  button: {fileID: 0}
 --- !u!1 &152504418
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,7 +501,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: fe0d90f59e7c98d468a1f44c562cbee6, type: 3}
   VideoClipListSecondary:
   - {fileID: 32900000, guid: 65de5d77970c1dc4daa089898f92f2ca, type: 3}
-  - {fileID: 32900000, guid: 6c02e90170e3eda408d5427251c63932, type: 3}
+  - {fileID: 32900000, guid: fe0d90f59e7c98d468a1f44c562cbee6, type: 3}
 --- !u!114 &428784309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,6 +546,7 @@ MonoBehaviour:
   deathstep: 0
   allvideos:
   - {fileID: 32900000, guid: 6c02e90170e3eda408d5427251c63932, type: 3}
+  - {fileID: 32900000, guid: 65de5d77970c1dc4daa089898f92f2ca, type: 3}
   playerrender: {fileID: 428784305}
 --- !u!1 &483391671
 GameObject:
@@ -715,19 +699,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 493039086}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 428784309}
-        m_TargetAssemblyTypeName: MainRoadFunk, Assembly-CSharp
-        m_MethodName: MainRoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &493039086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,20 +745,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493039083}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 73d0e4b18a091aa46a54236c8030fa44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rendervideocontroller: {fileID: 0}
-  mainroadtext: []
-  secondtext: []
-  Deathtext: []
-  ItActiv: 1
-  bottunMainRoad: 0
+  rendervideocontroller: {fileID: 428784304}
+  bottunMainRoad: 1
   secondaryRoad: 0
   DeathRoad: 0
-  button: {fileID: 0}
 --- !u!1 &1275828891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,23 +1162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rendervideocontroller: {fileID: 428784304}
-  mainroadtext:
-  - help me
-  - im stack
-  - 'brother i need fucking help  heheh i cutch you '
-  - 
-  - 
-  secondtext:
-  - second road test
-  - 228
-  Deathtext:
-  - dethroad test
-  - 229
-  ItActiv: 1
   bottunMainRoad: 0
   secondaryRoad: 0
   DeathRoad: 1
-  button: {fileID: 0}
 --- !u!1 &1886952100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,6 +1177,7 @@ GameObject:
   - component: {fileID: 1886952103}
   - component: {fileID: 1886952102}
   - component: {fileID: 1886952101}
+  - component: {fileID: 1886952105}
   m_Layer: 5
   m_Name: CanvasBT
   m_TagString: Untagged
@@ -1316,6 +1270,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1886952105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886952100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8844f68810e909346885332bcce8d242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomroad: 
+  allBT:
+  - {fileID: 1834949029}
+  - {fileID: 98568544}
+  - {fileID: 493039085}
 --- !u!1 &2024415954
 GameObject:
   m_ObjectHideFlags: 0

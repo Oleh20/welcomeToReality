@@ -5,6 +5,7 @@ using UnityEngine.Video;
 
 public class MainRoadFunk: MonoBehaviour
 {
+   
     public Canvas canvasbt;
 
    public VideoPlayer player;
@@ -15,21 +16,23 @@ public class MainRoadFunk: MonoBehaviour
 
     private void Start()
     {
-
-      Videos =  GetComponent<AllVideos>().VideoClipListMain;
+       
+        Videos =  GetComponent<AllVideos>().VideoClipListMain;
     }
 
     public void MainRoad()
     {//проигрывает следующее видео 
         player.clip = Videos[mainroadstep];
 
+        GetComponent<DeathAfterVideo>().deathstep++;
+        GetComponent<secondaryRoad>().othersteps++;
         mainroadstep++;
     }
-    public void GoBack()
+    public void GoBack(int road)
     {//скип на уровень назад
-        mainroadstep--;
-        if (mainroadstep == -1) { mainroadstep++; }
-        player.clip = Videos[mainroadstep];
+        road--;
+        if (road == -1) { road++; }
+        player.clip = Videos[road];
     }
     private void Update()
     {

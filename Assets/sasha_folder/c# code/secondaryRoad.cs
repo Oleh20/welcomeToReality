@@ -24,6 +24,7 @@ public class secondaryRoad : MonoBehaviour
         player.clip = Videos[othersteps];
 
         othersteps++;
+        GetComponent<MainRoadFunk>().GoBack(othersteps);
     }
 
 }
