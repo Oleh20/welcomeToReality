@@ -271,10 +271,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rendervideocontroller: {fileID: 0}
   mainroadtext: []
+  secondtext: []
+  Deathtext: []
   ItActiv: 1
   bottunMainRoad: 0
   secondaryRoad: 0
   DeathRoad: 0
+  button: {fileID: 0}
 --- !u!1 &152504418
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,10 +780,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rendervideocontroller: {fileID: 0}
   mainroadtext: []
+  secondtext: []
+  Deathtext: []
   ItActiv: 1
   bottunMainRoad: 0
   secondaryRoad: 0
   DeathRoad: 0
+  button: {fileID: 0}
 --- !u!1 &1275828891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,10 +1201,17 @@ MonoBehaviour:
   - 'brother i need fucking help  heheh i cutch you '
   - 
   - 
+  secondtext:
+  - second road test
+  - 228
+  Deathtext:
+  - dethroad test
+  - 229
   ItActiv: 1
-  bottunMainRoad: 1
+  bottunMainRoad: 0
   secondaryRoad: 0
-  DeathRoad: 0
+  DeathRoad: 1
+  button: {fileID: 0}
 --- !u!1 &1886952100
 GameObject:
   m_ObjectHideFlags: 0
