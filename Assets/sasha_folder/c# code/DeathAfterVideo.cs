@@ -14,25 +14,29 @@ public class DeathAfterVideo : MonoBehaviour
     {
      
     }
+    private void Update()
+    {
+        deathstep = GetComponent<MainRoadFunk>().mainroadstep;
+    }
     public void PlayONLYoneTimeandDeath()
     {// смерть игрока и откат видео обратно 
 
         playerrender.clip = allvideos[deathstep];
-        
 
+        
         StartCoroutine(carutine());
 
     }
     IEnumerator carutine () {
         //задержка перед откатом 
-        yield return new WaitForSeconds(5) ;
+        yield return new WaitForSeconds(2) ;
         
 
 
-            GetComponent<MainRoadFunk>().GoBack(playerrender.GetComponent<MainRoadFunk>().mainroadstep); 
+            GetComponent<MainRoadFunk>().GoBack(); 
 
 
-    ;}
+    }
 
 
 

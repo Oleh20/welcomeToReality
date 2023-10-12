@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -16,23 +17,34 @@ public class MainRoadFunk: MonoBehaviour
 
     private void Start()
     {
+    
+
        
-        Videos =  GetComponent<AllVideos>().VideoClipListMain;
+       Videos =  GetComponent<AllVideos>().VideoClipListMain;
+        player.clip = Videos[0];
     }
+    
 
     public void MainRoad()
     {//проигрывает следующее видео 
+
         player.clip = Videos[mainroadstep];
 
-        GetComponent<DeathAfterVideo>().deathstep++;
-        GetComponent<secondaryRoad>().othersteps++;
+        player.Play();
+        
         mainroadstep++;
     }
-    public void GoBack(int road)
+    public void GoBack()
     {//скип на уровень назад
-        road--;
-        if (road == -1) { road++; }
-        player.clip = Videos[road];
+
+        mainroadstep--;
+        if (mainroadstep <= -1) { mainroadstep = 0; }
+
+        MainRoad();
+        mainroadstep--;
+       // player.clip = Videos[mainroadstep];
+
+       
     }
     private void Update()
     {
@@ -42,6 +54,11 @@ public class MainRoadFunk: MonoBehaviour
             canvasbt.enabled = false;
         }
         else { canvasbt.enabled = true; }
+
+
+
+    
+
     }
    
 }
