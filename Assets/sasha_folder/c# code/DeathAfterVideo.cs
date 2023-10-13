@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 
+
 public class DeathAfterVideo : MonoBehaviour
 {
     public int deathstep;
@@ -10,33 +11,16 @@ public class DeathAfterVideo : MonoBehaviour
     public VideoClip[] allvideos;
     public VideoPlayer playerrender;
 
-    private void Start()
-    {
-     
-    }
-    private void Update()
+    
+    public void PlayONLYoneTimeandDeath()
     {
         deathstep = GetComponent<MainRoadFunk>().mainroadstep;
-    }
-    public void PlayONLYoneTimeandDeath()
-    {// смерть игрока и откат видео обратно 
-
         playerrender.clip = allvideos[deathstep];
 
-        
-        StartCoroutine(carutine());
-
+        GetComponent<MainRoadFunk>().GoBack();
     }
-    IEnumerator carutine () {
-        //задержка перед откатом 
-        yield return new WaitForSeconds(2) ;
-        
-
-
-            GetComponent<MainRoadFunk>().GoBack(); 
-
-
-    }
+   
+    
 
 
 

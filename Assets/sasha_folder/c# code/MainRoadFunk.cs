@@ -6,59 +6,61 @@ using UnityEngine.Video;
 
 public class MainRoadFunk: MonoBehaviour
 {
-   
-    public Canvas canvasbt;
+    
+    public GameObject canvasBTback;
+    public GameObject canvasbt;
 
    public VideoPlayer player;
 
-   VideoClip[] Videos;
+  private VideoClip[] Videos;
 
    public int mainroadstep;
 
     private void Start()
-    {
-    
-
-       
+    { 
        Videos =  GetComponent<AllVideos>().VideoClipListMain;
-        player.clip = Videos[0];
+        
+        canvasBTback.SetActive(false);
     }
     
 
     public void MainRoad()
-    {//проигрывает следующее видео 
+    {// play main story line 
 
         player.clip = Videos[mainroadstep];
 
         player.Play();
         
         mainroadstep++;
+        canvasbt.SetActive(false) ;
+
+      
+
+      
     }
     public void GoBack()
-    {//скип на уровень назад
+    {
 
         mainroadstep--;
         if (mainroadstep <= -1) { mainroadstep = 0; }
 
-        MainRoad();
-        mainroadstep--;
-       // player.clip = Videos[mainroadstep];
+        canvasbt.SetActive(false);
 
-       
+        
+       StartCoroutine(videoplayback()); 
     }
-    private void Update()
+  
+    IEnumerator videoplayback()
     {
-        //проверка проигруется ли видео и отключаются кнопки 
-        if (player.isPlaying)
-        {
-            canvasbt.enabled = false;
-        }
-        else { canvasbt.enabled = true; }
-
-
-
-    
-
+        yield return new WaitForSeconds(1);
+        yield return new WaitUntil(() => player.isPlaying == false );
+        Debug.Log("videoplay");
+        MainRoad();  //atomatish send you back 
+        //canvasBTback.SetActive(true); canvasbt.SetActive(false);//with button send you back
     }
-   
+
+
+
+
+
 }

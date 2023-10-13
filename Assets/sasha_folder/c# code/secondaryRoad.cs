@@ -14,34 +14,22 @@ public class secondaryRoad : MonoBehaviour
     {
         Videos = GetComponent<AllVideos>().VideoClipListSecondary;
     }
-    private void Update()
-    {
-       othersteps = GetComponent<MainRoadFunk>().mainroadstep;
-    }
+   
 
 
 
 
     public void OtherWay()
-    {// включение видео с другого масива 
+    {
 
+        othersteps = GetComponent<MainRoadFunk>().mainroadstep;
         player.clip = Videos[othersteps];
 
-        StartCoroutine(carutine());
-      //  GetComponent<MainRoadFunk>().GoBack(othersteps);
-
-
-    }
-    IEnumerator carutine()
-    {
-        //задержка перед откатом 
-        yield return new WaitForSeconds(2);
-
-
+     
 
         GetComponent<MainRoadFunk>().GoBack();
 
-
     }
+   
 
 }

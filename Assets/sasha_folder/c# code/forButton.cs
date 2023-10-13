@@ -13,20 +13,22 @@ public class forButton : MonoBehaviour
     private string[] mainroadtext;
     private string[] secondtext;
     private string[] Deathtext;
+
+
     private string[] ShouText;
 
     int nummeroftext;
 
-    private bool ItActiv = true;
 
-    
-    public bool bottunMainRoad;
 
-    public bool secondaryRoad;
 
-    public bool DeathRoad;
+    public bool bottunMainRoad ;
 
-    static private bool[] RandomRoad;
+    public bool secondaryRoad ;
+
+    public bool DeathRoad ;
+
+   
 
     private Button button;
     private void Start()
@@ -35,7 +37,7 @@ public class forButton : MonoBehaviour
         Deathtext = new string[5];
         secondtext = new string[5];
 
-        //масив текстов
+        //
         mainroadtext[0] = "Важка, велів би бути вдома";
         mainroadtext[1] = "Так ми повинні ";
         mainroadtext[2] = "так само як вас";
@@ -57,7 +59,7 @@ public class forButton : MonoBehaviour
 
         button = GetComponent<Button>();
 
-        MadeCurenttRoad();
+       MadeCurenttRoad();
 
 
 
@@ -69,9 +71,10 @@ public class forButton : MonoBehaviour
 
     }
     
-    void MadeCurenttRoad()
+    public void MadeCurenttRoad()
     {
-        // установил кнопку на определенный путь а значит это а хуй его знает что это значит блять 
+        deleteLastRoad();
+      
         if (bottunMainRoad)
         {
 
@@ -91,42 +94,25 @@ public class forButton : MonoBehaviour
         }
     }
     void deleteLastRoad()
-    {// удалить все функции были раньше
+    {
 
     button.onClick.RemoveAllListeners();
     
     }
-    void SetRandomRoad()
-    {// нужно придумать фунцию чтобы кнопки рандомно назначались 
-       
-
-       
-
-    }
-
-    public void RRandom()
-    {
-
-    }
-    private void FixedUpdate()
-    {// просто переменная чтобы отображать или не отображать кнопку
-        if (ItActiv)
-        {
-           this.gameObject.SetActive(true);
-        }
-        else { this.gameObject.SetActive(false); }
-    }
+   /// <summary>
+   /// //////////////////////////////////////////////////////////////////////////
+   /// </summary>
 
     private void Update()
     {
-        // установка текста на кнопке но нужно переделать закинуть на какую то функцию с обновлением кнопок 
+       
 
         nummeroftext = rendervideocontroller.GetComponent<MainRoadFunk>().mainroadstep;
         SetTextForRoad();
         
     }
     public void SetTextForRoad()
-    {//установка текста на кнопку в зависимости от выбора 
+    {
 
         ShouText = whatfortextyouneed();
 
@@ -137,7 +123,7 @@ public class forButton : MonoBehaviour
 
     }
      string[] whatfortextyouneed()
-    {// выбор текста который будет отображаться в зависимости от функции на кнопке
+    {
         if (bottunMainRoad) { ShouText = mainroadtext; }
         if (secondaryRoad) { ShouText = secondtext; }
         if (DeathRoad) { ShouText = Deathtext; }

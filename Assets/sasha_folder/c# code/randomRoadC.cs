@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class randomRoadC : MonoBehaviour
 {
@@ -11,15 +12,29 @@ public class randomRoadC : MonoBehaviour
 
     public Button[] allBT;
 
+
+    public GameObject player;
+
     private int it;
-    void rrr()
+   
+    private void Start()
     {
-      it =  Random.Range(0, 3);
+        gameObject.SetActive(false);
+        player.GetComponent<VideoPlayer>().loopPointReached += canvasisActiv;
 
+       
 
+    }
+    void canvasisActiv(VideoPlayer vp)
+    {
 
+       gameObject.SetActive(true);
+
+        
+       
 
 
     }
+  
 
 }
