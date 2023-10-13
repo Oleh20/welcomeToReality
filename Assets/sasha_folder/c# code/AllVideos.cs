@@ -9,7 +9,7 @@ public class AllVideos : MonoBehaviour
 
     public VideoClip[] VideoClipListSecondary;
 
-
+    public VideoClip[] VideoClipListDeath;
 
 
 

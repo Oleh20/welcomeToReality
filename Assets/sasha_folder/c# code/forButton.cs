@@ -101,19 +101,21 @@ public class forButton : MonoBehaviour
     }
    /// <summary>
    /// //////////////////////////////////////////////////////////////////////////
-   /// </summary>
+   /// </summary> text cod ruslan you can make it all delit
+   /// 
+
 
     private void Update()
     {
        
 
-        nummeroftext = rendervideocontroller.GetComponent<MainRoadFunk>().mainroadstep;
+        
         SetTextForRoad();
         
     }
     public void SetTextForRoad()
     {
-
+        nummeroftext = rendervideocontroller.GetComponent<MainRoadFunk>().mainroadstep;
         ShouText = whatfortextyouneed();
 
 

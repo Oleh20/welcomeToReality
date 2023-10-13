@@ -21,17 +21,26 @@ public class MainRoadFunk: MonoBehaviour
        Videos =  GetComponent<AllVideos>().VideoClipListMain;
         
         canvasBTback.SetActive(false);
+
+        player.clip = Videos[0];
     }
     
 
     public void MainRoad()
     {// play main story line 
 
-        player.clip = Videos[mainroadstep];
+
+        if (mainroadstep == -1) { mainroadstep = 0; player.clip = Videos[mainroadstep]; }
+        else
+        {
+            player.clip = Videos[mainroadstep];
+            mainroadstep++;
+        }
 
         player.Play();
         
-        mainroadstep++;
+        
+        if (mainroadstep == -1) { mainroadstep = 0; }
         canvasbt.SetActive(false) ;
 
       
@@ -41,13 +50,15 @@ public class MainRoadFunk: MonoBehaviour
     public void GoBack()
     {
 
-        mainroadstep--;
-        if (mainroadstep <= -1) { mainroadstep = 0; }
+      mainroadstep--; 
+
+      //  if (mainroadstep <= -1) { mainroadstep = 0; }
 
         canvasbt.SetActive(false);
 
         
-       StartCoroutine(videoplayback()); 
+       StartCoroutine(videoplayback());
+        
     }
   
     IEnumerator videoplayback()

@@ -8,14 +8,19 @@ public class DeathAfterVideo : MonoBehaviour
 {
     public int deathstep;
 
-    public VideoClip[] allvideos;
+   VideoClip[] Videos;
     public VideoPlayer playerrender;
 
-    
+    private void Start()
+    {
+        Videos = GetComponent<AllVideos>().VideoClipListSecondary;
+    }
+
+
     public void PlayONLYoneTimeandDeath()
     {
         deathstep = GetComponent<MainRoadFunk>().mainroadstep;
-        playerrender.clip = allvideos[deathstep];
+        playerrender.clip = Videos[deathstep];
 
         GetComponent<MainRoadFunk>().GoBack();
     }
