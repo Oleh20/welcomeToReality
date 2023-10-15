@@ -51,7 +51,7 @@ public class forButton : MonoBehaviour
         secondtext[4] = "";
         //
         Deathtext[0] = "17:15";
-        Deathtext[1] = "та мимо проходив";
+       // Deathtext[1] = "не ебу что тут нужно";
         Deathtext[2] = "бувало й краще";
         Deathtext[3] = "";
         Deathtext[4] = "";
@@ -121,6 +121,7 @@ public class forButton : MonoBehaviour
 
         gameObject.GetComponentInChildren<Text>().text = ShouText[nummeroftext];
 
+        MakeButtonOff();
 
 
     }
@@ -130,8 +131,16 @@ public class forButton : MonoBehaviour
         if (secondaryRoad) { ShouText = secondtext; }
         if (DeathRoad) { ShouText = Deathtext; }
 
-        if(ShouText == null) { Debug.Log("you lost text in c# forButton");  }
+        if (ShouText == null) { Debug.Log("you lost text in c# forButton"); }
 
         return ShouText;
     }
+    public void MakeButtonOff()
+    {
+        if (gameObject.GetComponentInChildren<Text>().text == "") { button.gameObject.SetActive(false); Debug.Log("button is off"); }
+
+        
+    }
+    public void buttonIsActiv() { button.gameObject.SetActive(true); }
 }
+

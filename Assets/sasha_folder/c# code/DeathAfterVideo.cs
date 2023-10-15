@@ -6,9 +6,10 @@ using UnityEngine.Video;
 
 public class DeathAfterVideo : MonoBehaviour
 {
+
     public int deathstep;
 
-   VideoClip[] Videos;
+    VideoClip[] Videos;
     public VideoPlayer playerrender;
 
     private void Start()
@@ -21,6 +22,8 @@ public class DeathAfterVideo : MonoBehaviour
     {
         deathstep = GetComponent<MainRoadFunk>().mainroadstep;
         playerrender.clip = Videos[deathstep];
+
+
 
         GetComponent<MainRoadFunk>().GoBack();
     }

@@ -30,7 +30,7 @@ public class randomRoadC : MonoBehaviour
 
        gameObject.SetActive(true);
 
-        
+        for (int i = 0; i < allBT.Length; i++) { allBT[i].GetComponent<forButton>().buttonIsActiv(); }
        
 
 
