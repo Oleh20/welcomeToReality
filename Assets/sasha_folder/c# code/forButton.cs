@@ -47,14 +47,14 @@ public class forButton : MonoBehaviour
         secondtext[0] = " Час тебе знищити";
         secondtext[1] = "вас це не стосується";
         secondtext[2] = "гамно";
-        secondtext[3] = "";
-        secondtext[4] = "";
+        secondtext[3] = "1";
+        secondtext[4] = "1";
         //
         Deathtext[0] = "17:15";
        // Deathtext[1] = "не ебу что тут нужно";
         Deathtext[2] = "бувало й краще";
-        Deathtext[3] = "";
-        Deathtext[4] = "";
+        Deathtext[3] = "1";
+        Deathtext[4] = "1";
 
 
         button = GetComponent<Button>();

@@ -47,8 +47,9 @@ public class MainRoadFunk : MonoBehaviour
         if (mainroadstep == -1) { mainroadstep = 0; player.clip = Videos[mainroadstep]; }
         else
         {
-            player.clip = Videos[mainroadstep];
+        
             mainroadstep++;
+            player.clip = Videos[mainroadstep];
         }
         
         player.Play();
