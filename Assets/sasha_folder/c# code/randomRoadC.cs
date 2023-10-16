@@ -25,6 +25,13 @@ public class randomRoadC : MonoBehaviour
        
 
     }
+    public void Timer()
+    {
+        int timer;
+
+
+
+    }
     void canvasisActiv(VideoPlayer vp)
     {
 
