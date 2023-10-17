@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 30658972045312
-    m_Localized: Choose a language
+    m_Localized: Language selection
     m_Metadata:
       m_Items: []
   - m_Id: 30793458208768
@@ -40,6 +40,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1824469978923008
     m_Localized: no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2163689388199936
+    m_Localized: About the game
     m_Metadata:
       m_Items: []
   references:

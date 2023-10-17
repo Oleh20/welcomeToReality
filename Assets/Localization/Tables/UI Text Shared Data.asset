@@ -16,19 +16,19 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 10d0927cb0995e54d87c32aae5886bf7
   m_Entries:
   - m_Id: 31329570816
-    m_Key: "\u0412\u0438\u0431\u0456\u0440 \u043C\u043E\u0432\u0438"
+    m_Key: Select Language
     m_Metadata:
       m_Items: []
   - m_Id: 23392420057088
-    m_Key: "\u041D\u043E\u0432\u0430 \u0413\u0440\u0430"
+    m_Key: New game
     m_Metadata:
       m_Items: []
   - m_Id: 30658972045312
-    m_Key: "\u041F\u043E\u0432\u0435\u0440\u043D\u0435\u043D\u043D\u044F"
+    m_Key: Language selection
     m_Metadata:
       m_Items: []
   - m_Id: 30793458208768
-    m_Key: "\u0412\u0438\u0445\u0456\u0434"
+    m_Key: Exit
     m_Metadata:
       m_Items: []
   - m_Id: 1824373442822144
@@ -37,6 +37,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1824469978923008
     m_Key: no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2163689388199936
+    m_Key: About the game
     m_Metadata:
       m_Items: []
   m_Metadata:
