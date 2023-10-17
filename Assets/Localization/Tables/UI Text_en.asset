@@ -46,6 +46,48 @@ MonoBehaviour:
     m_Localized: About the game
     m_Metadata:
       m_Items: []
+  - m_Id: 2271985482813440
+    m_Localized: There should be a game here, but Sanya hasn't made it yet, so you
+      can go back and look at the beautiful menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2272181587496960
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2279054063652864
+    m_Localized: Created 10.2023
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2280046272401408
+    m_Localized: 'The game is being developed by:
+
+      The author of the idea,
+      editor and operator - Oleg Pagulych
+
+      Actors - Oleksandr Dovhiy and Oleksandr
+      Klymenko
+
+      Programmers - Ruslan Pagulych and Oleksandr Klymenko
+
+      Localization
+      editor and tester - Karyna Medvedieva'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2280218540855296
+    m_Localized: 'You can support us to create new products
+
+      4441 1144 5336
+      2947
+
+      and in return we will write your name here forever.
+
+      Don''t
+      forget to subscribe)
+
+      Patrons:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

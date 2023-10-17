@@ -6,18 +6,16 @@ using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ControlButtons: MonoBehaviour
+public class ControlButtons : MonoBehaviour
 {
     public void SwitchToEN()
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
-
     }
 
     public void SwitchToUA()
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
-
     }
 
     public void LoadMenuScene()
@@ -35,11 +33,14 @@ public class ControlButtons: MonoBehaviour
         StartCoroutine(LoadSceneWithDelay("About the game", 1.0f));
     }
 
+    public void LoadGame()
+    {
+        StartCoroutine(LoadSceneWithDelay("Game", 1.0f));
+    }
+
     public void QuitGame()
     {
-
         Application.Quit();
-
     }
 
     private IEnumerator LoadSceneWithDelay(string sceneName, float delay)
@@ -47,5 +48,12 @@ public class ControlButtons: MonoBehaviour
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(sceneName);
     }
-
+    public void DestroyMusicManager()
+    {
+        MusicManager musicManager = FindObjectOfType<MusicManager>();
+        if (musicManager != null)
+        {
+            musicManager.DestroyMusicManager();
+        }
+    }
 }
