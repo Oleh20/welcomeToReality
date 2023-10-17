@@ -156,10 +156,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1387506380}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.45000002, y: 0.034555554}
-  m_AnchorMax: {x: 0.5551453, y: 0.08161111}
-  m_AnchoredPosition: {x: -649, y: -17}
-  m_SizeDelta: {x: -1.5639038, y: -3.025999}
+  m_AnchorMin: {x: 0.20332433, y: 0.023444444}
+  m_AnchorMax: {x: 0.305, y: 0.068722226}
+  m_AnchoredPosition: {x: 1.5, y: 0.027954102}
+  m_SizeDelta: {x: 9.436096, y: -1.0259991}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &208525945
 MonoBehaviour:
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.45
+  m_fontSize: 46.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -800,15 +800,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The game was developed by:
+  m_text: 'The game is being developed by:
 
-    The author of the idea, editor and operator
-    - Oleg Pagulych
+    The author of the idea, editor and
+    operator - Oleg Pagulych
 
     Actors - Oleksandr Dovhiy and Oleksandr Klymenko
 
-    Programmers:
-    Ruslan Pagulych and Oleksandr Klymenko'
+    Programmers
+    - Ruslan Pagulych and Oleksandr Klymenko
+
+    Localization editor and tester
+    - Karyna Medvedieva'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 693b23ca4c206f34893096a0249e4613, type: 2}
   m_sharedMaterial: {fileID: -6547437295213852887, guid: 693b23ca4c206f34893096a0249e4613, type: 2}
@@ -835,7 +838,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46
+  m_fontSize: 38.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -919,7 +922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.083171874, y: 0.068722226}
   m_AnchorMax: {x: 0.40800002, y: 0.653639}
-  m_AnchoredPosition: {x: -5, y: 0.46002197}
+  m_AnchoredPosition: {x: -5, y: 0.45996094}
   m_SizeDelta: {x: -4.8200073, y: 2.3460007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1770856272
