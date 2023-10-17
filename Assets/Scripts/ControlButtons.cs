@@ -22,12 +22,17 @@ public class ControlButtons: MonoBehaviour
 
     public void LoadMenuScene()
     {
-        SceneManager.LoadScene("Menu");
+        StartCoroutine(LoadSceneWithDelay("Menu", 1.0f));
     }
 
     public void LoadLanguageSelection()
     {
-        SceneManager.LoadScene("Language selection");
+        StartCoroutine(LoadSceneWithDelay("Language selection", 1.0f));
+    }
+
+    public void LoadAboutTheGame()
+    {
+        StartCoroutine(LoadSceneWithDelay("About the game", 1.0f));
     }
 
     public void QuitGame()
@@ -35,6 +40,12 @@ public class ControlButtons: MonoBehaviour
 
         Application.Quit();
 
+    }
+
+    private IEnumerator LoadSceneWithDelay(string sceneName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneName);
     }
 
 }
