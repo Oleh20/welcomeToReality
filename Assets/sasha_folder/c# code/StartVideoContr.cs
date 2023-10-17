@@ -5,6 +5,8 @@ using UnityEngine.Video;
 
 public class StartVideoContr : MonoBehaviour
 {
+    public bool youwantstart;
+
     public Canvas canvas;
 
     public VideoClip[] videoarr = new VideoClip[2];
@@ -15,13 +17,16 @@ public class StartVideoContr : MonoBehaviour
     private VideoPlayer player;
     void Start()
     {
-        player = GetComponent<VideoPlayer>()  ;
+        if (youwantstart)
+        {
+            player = GetComponent<VideoPlayer>();
 
-        player.clip = startvideo;
+            player.clip = startvideo;
 
-        player.Play();
+            player.Play();
 
-        player.GetComponent<VideoPlayer>().loopPointReached += showBT ;
+            player.GetComponent<VideoPlayer>().loopPointReached += showBT;
+        }
     }
     void showBT (VideoPlayer vp)
     {

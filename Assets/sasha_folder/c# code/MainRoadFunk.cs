@@ -19,7 +19,7 @@ public class MainRoadFunk : MonoBehaviour
     
     private int videonext = 0;
     public VideoClip[] videobetween;
-    public int[] playbetween; //
+    public int[] playbetween; 
 
     private void Start()
     {

@@ -33,31 +33,36 @@ public class forButton : MonoBehaviour
     private Button button;
     private void Start()
     {
-        mainroadtext = new string[5];
-        Deathtext = new string[5];
-        secondtext = new string[5];
+        mainroadtext = new string[10];
+        Deathtext = new string[10];
+        secondtext = new string[10];
 
         //
         mainroadtext[0] = "Важка, велів би бути вдома";
         mainroadtext[1] = "Так ми повинні ";
+
         mainroadtext[2] = "так само як вас";
         mainroadtext[3] = "файно";
         mainroadtext[4] = "так для цього я приніс цей диплома";
+        mainroadtext[5] = "1";
         // 
         secondtext[0] = " Час тебе знищити";
         secondtext[1] = "вас це не стосується";
-        secondtext[2] = "гамно";
-        secondtext[3] = "1";
-        secondtext[4] = "1";
+
+        secondtext[2] = "вас це не стосуєтся";
+        secondtext[3] = "гамно";
+        secondtext[4] = "ні годувати рибок";
+        secondtext[5] = "2";
         //
         Deathtext[0] = "17:15";
-       // Deathtext[1] = "не ебу что тут нужно";
-        Deathtext[2] = "бувало й краще";
-        Deathtext[3] = "1";
-        Deathtext[4] = "1";
+       // Deathtext[1] = "пусто";
 
+        Deathtext[2] = "та мимо проходив";
+        Deathtext[3] = "бувало і краще";
+        Deathtext[4] = "вже нічого не можна вдіяти";
+        Deathtext[5] = "3";
 
-        button = GetComponent<Button>();
+       button = GetComponent<Button>();
 
        MadeCurenttRoad();
 
@@ -121,7 +126,8 @@ public class forButton : MonoBehaviour
 
         gameObject.GetComponentInChildren<Text>().text = ShouText[nummeroftext];
 
-        MakeButtonOff();
+       // MakeButtonOff();
+       // MakeButtonOff();
 
 
     }
