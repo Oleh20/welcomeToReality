@@ -167,7 +167,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133538224}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d1b653293f4906b49a2afdd532c73ac8, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: ba57fdc4e4fc6b84aa899259fdf8d58e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1717000693}
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1133538226}
-  nextSceneName: Language selection
+  nextSceneName: Game logo
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

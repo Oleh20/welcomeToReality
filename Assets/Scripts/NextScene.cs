@@ -26,7 +26,7 @@ public class NextScene : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Назва наступної сцени не вказана в інспекторі.");
+            Debug.LogError("Eror");
         }
     }
 }
