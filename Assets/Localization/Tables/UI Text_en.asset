@@ -60,15 +60,18 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2280046272401408
-    m_Localized: 'The game was developed by:
+    m_Localized: 'The game is being developed by:
 
-      The author of the idea, editor
-      and operator - Oleg Pagulych
+      The author of the idea,
+      editor and operator - Oleg Pagulych
 
       Actors - Oleksandr Dovhiy and Oleksandr
       Klymenko
 
-      Programmers: Ruslan Pagulych and Oleksandr Klymenko'
+      Programmers - Ruslan Pagulych and Oleksandr Klymenko
+
+      Localization
+      editor - Karina Medvedeva'
     m_Metadata:
       m_Items: []
   - m_Id: 2280218540855296
