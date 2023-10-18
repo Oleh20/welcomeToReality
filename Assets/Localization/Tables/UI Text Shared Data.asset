@@ -40,7 +40,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2555565930659840
-    m_Key: MainRoadText
+    m_Key: 2 Textdeath
     m_Metadata:
       m_Items: []
   - m_Id: 2559667616038912
@@ -89,6 +89,54 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2621390549106688
     m_Key: main1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2654943487934464
+    m_Key: 2 Textsecond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2655059649183744
+    m_Key: 3 Textmain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2655200745570304
+    m_Key: 3 Textdeath
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2655291845853184
+    m_Key: 3 Textsecond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2655349525921792
+    m_Key: 4 Textmain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656429273989120
+    m_Key: 4 Textsecond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656515039117312
+    m_Key: 4 Textdeath
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656600368037888
+    m_Key: 5 Textmain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2657082645889024
+    m_Key: 5 Textsecond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2657180855517184
+    m_Key: 6 Textmain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2657280717701120
+    m_Key: 6 Textsecond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2657396883144704
+    m_Key: 6 Textdeath
     m_Metadata:
       m_Items: []
   m_Metadata:

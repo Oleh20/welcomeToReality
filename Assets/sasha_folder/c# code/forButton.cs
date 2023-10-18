@@ -51,8 +51,8 @@ public class forButton : MonoBehaviour
         
        button = GetComponent<Button>();
 
-        
-        
+
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
         MadeCurenttRoad();
 
         texttransleter();
@@ -155,7 +155,7 @@ public class forButton : MonoBehaviour
     }
     public void MakeButtonOff()
     {
-        if (gameObject.GetComponentInChildren<Text>().text == "") { button.gameObject.SetActive(false); Debug.Log("button is off"); }
+        if (gameObject.GetComponentInChildren<Text>().text == "") { button.gameObject.SetActive(false);  }
 
         
     }

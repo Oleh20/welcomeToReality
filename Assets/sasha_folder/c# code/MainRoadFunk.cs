@@ -1,5 +1,7 @@
 using System.Collections;
+using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 public class MainRoadFunk : MonoBehaviour
@@ -21,10 +23,14 @@ public class MainRoadFunk : MonoBehaviour
     public VideoClip[] videobetween;
     public int[] playbetween;
 
-    [SerializeField] private Subtitles subtitlesComponent;
+    public GameObject endofgame;
 
+   // [SerializeField] private Subtitles subtitlesComponent;
+
+    public bool itWasStarted = false;
     private void Start()
     {
+        endofgame.SetActive(false);
         Videos = GetComponent<AllVideos>().VideoClipListMain;
 
       //  canvasBTback.SetActive(false);
@@ -33,10 +39,10 @@ public class MainRoadFunk : MonoBehaviour
     public void playstart()
     {
         player.clip = Videos[0];
-        subtitlesComponent.StartSubtitles("intro", 3);
+       // subtitlesComponent.StartSubtitles("intro", 3);
         //  canvasbt.SetActive(false);
 
-
+        itWasStarted = true;
     }
 
 
@@ -52,23 +58,24 @@ public class MainRoadFunk : MonoBehaviour
             mainroadstep++;
             player.clip = Videos[mainroadstep];
         }
-        subtitlesComponent.StartSubtitles("main", mainroadstep);
+       // subtitlesComponent.StartSubtitles("main", mainroadstep);
         player.Play();
 
 
         if (mainroadstep == -1) { mainroadstep = 0; }
-        canvasbt.SetActive(false);
+       canvasbt.SetActive(false);
 
 
         AreYouNeedPlayBetween();
-
+        
+     //   StartCoroutine(videoplayback1());
     }
   
     public void GoBack()
     {
 
 
-        if (mainroadstep == itsaveroad[0]) { MainRoad(); }
+        if (mainroadstep == itsaveroad[0]) { mainroadstep++; canvasbt.SetActive(false); player.Play(); }
         else
         {
 
@@ -77,16 +84,38 @@ public class MainRoadFunk : MonoBehaviour
             canvasbt.SetActive(false);
 
 
-            StartCoroutine(videoplayback());
+           StartCoroutine(videoplayback());
         }
        
     }
+    public void lastmap()
+    {
+        if (mainroadstep >= 6)
+        
+        {
+            canvasBTback.SetActive(false);
+            canvasbt.SetActive(false);
+            endofgame.SetActive(true);
+
+        }
+
+    }
+    IEnumerator videoplayback1()
+    {
+        yield return new WaitForSeconds(1);
+        yield return new WaitUntil(() => player.isPlaying == false);
+
+        
+        lastmap();  //atomatish send you back 
+        //canvasBTback.SetActive(true); canvasbt.SetActive(false);//with button send you back
+    }
+
 
     IEnumerator videoplayback()
     {
         yield return new WaitForSeconds(1);
         yield return new WaitUntil(() => player.isPlaying == false);
-        Debug.Log("videoplay");
+        
         MainRoad();  //atomatish send you back 
         //canvasBTback.SetActive(true); canvasbt.SetActive(false);//with button send you back
     }
