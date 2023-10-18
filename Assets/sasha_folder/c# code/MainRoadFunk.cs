@@ -19,7 +19,9 @@ public class MainRoadFunk : MonoBehaviour
     
     private int videonext = 0;
     public VideoClip[] videobetween;
-    public int[] playbetween; 
+    public int[] playbetween;
+
+    [SerializeField] private Subtitles subtitlesComponent;
 
     private void Start()
     {
@@ -31,9 +33,9 @@ public class MainRoadFunk : MonoBehaviour
     public void playstart()
     {
         player.clip = Videos[0];
+        subtitlesComponent.StartSubtitles("intro", 3);
+        //  canvasbt.SetActive(false);
 
-      //  canvasbt.SetActive(false);
-       
 
     }
 
@@ -46,11 +48,11 @@ public class MainRoadFunk : MonoBehaviour
         if (mainroadstep == -1) { mainroadstep = 0; player.clip = Videos[mainroadstep]; }
         else
         {
-        
+            
             mainroadstep++;
             player.clip = Videos[mainroadstep];
         }
-        
+        subtitlesComponent.StartSubtitles("main", mainroadstep);
         player.Play();
 
 
@@ -71,8 +73,6 @@ public class MainRoadFunk : MonoBehaviour
         {
 
             mainroadstep--;
-
-
 
             canvasbt.SetActive(false);
 

@@ -10,6 +10,8 @@ public class secondaryRoad : MonoBehaviour
 
     public int othersteps;
 
+    [SerializeField] private Subtitles subtitlesComponent;
+
     private void Start()
     {
         Videos = GetComponent<AllVideos>().VideoClipListSecondary;
@@ -24,8 +26,8 @@ public class secondaryRoad : MonoBehaviour
 
         othersteps = GetComponent<MainRoadFunk>().mainroadstep;
         player.clip = Videos[othersteps];
+        subtitlesComponent.StartSubtitles("secondary", othersteps);
 
-     
 
         GetComponent<MainRoadFunk>().GoBack();
 
