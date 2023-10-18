@@ -2,33 +2,41 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
+using UnityEngine.Localization.Settings;
 
 public class Minigame : MonoBehaviour
 {
-    public TextMeshProUGUI sliderValueText;
-    public TextMeshProUGUI timerText;
-    public TextMeshProUGUI messageText;
-    public Button startButton;
-    public Button fillButton;
-    public Slider slider;
-    public VideoPlayer videoPlayer;
-    public float timeLimit = 10.0f;
-    public float fillAmountPerClick = 12.0f;
-    public float winRangeMin = 40.0f;
-    public float winRangeMax = 60.0f;
-    public float minFillSpeed = 0.1f;
-    public float maxFillSpeed = 2.0f;
-    public float fillInterval = 0.5f;
+
+    [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private Image info;
+    [SerializeField] private Button startButton;
+    [SerializeField] private Button fillButton;
+    [SerializeField] private VideoPlayer videoPlayer;
+    [SerializeField] private float fillAmountPerClick = 12.0f;
+    [SerializeField] private float winRangeMin = 50.0f;
+    [SerializeField] private float winRangeMax = 60.0f;
+    [SerializeField] private float minFillSpeed = 1.0f;
+    [SerializeField] private float maxFillSpeed = 5.0f;
+    [SerializeField] private float fillInterval = 0.25f;
+    [SerializeField] private VideoClip tooLittleVideoClip;
+    [SerializeField] private VideoClip tooMuchVideoClip;
+    [SerializeField] private VideoClip inRangeVideoClip;
+    [SerializeField] private VideoClip finihVideo;
+    [SerializeField] private GameObject canvas;
+    [SerializeField] private Slider slider;
+    [SerializeField] private Button reloadButton;
+    [SerializeField] private GameObject music;
+    public string mainRoadTextLocalizationKey = "Time";
+    private string abouTheGame;
     private float currentTime;
     private bool gameStarted;
     private bool gameEnded;
     private float sliderValue;
     private float randomFillSpeed;
     private float timeSinceLastFill;
-    public VideoClip tooLittleVideoClip;
-    public VideoClip tooMuchVideoClip;
-    public VideoClip inRangeVideoClip;
-
+    private float timeLimit = 10.0f;
 
     private void Start()
     {
@@ -40,17 +48,25 @@ public class Minigame : MonoBehaviour
         gameStarted = false;
         gameEnded = false;
         timeSinceLastFill = 0;
+        canvas.SetActive(false);
 
         startButton.onClick.AddListener(StartGame);
         fillButton.onClick.AddListener(FillSlider);
+        startButton.onClick.AddListener(ShowCanvas);
+        startButton.onClick.AddListener(HideButton);
 
-
-        UpdateSliderValueText();
         UpdateTimerText();
         RandomizeFillSpeed();
     }
+    private void HideButton()
+    {
+        startButton.gameObject.SetActive(false);
 
-
+    }
+    private void ShowCanvas()
+    {
+        canvas.SetActive(true);
+    }
 
     private void Update()
     {
@@ -73,17 +89,15 @@ public class Minigame : MonoBehaviour
                 {
                     EndGame("InRange");
                 }
-               else if(sliderValue <= winRangeMin)
+                else if (sliderValue <= winRangeMin)
                 {
                     EndGame("TooLittle");
                 }
-                else if(sliderValue >= winRangeMax)
+                else if (sliderValue >= winRangeMax)
                 {
                     EndGame("TooMuch");
                 }
             }
-
-            UpdateSliderValueText();
             UpdateSliderFillAmount();
         }
     }
@@ -103,28 +117,50 @@ public class Minigame : MonoBehaviour
         switch (result)
         {
             case "TooLittle":
+                StartVideo();
                 videoPlayer.clip = tooLittleVideoClip;
+                videoPlayer.Play();
+                videoPlayer.loopPointReached += OnVideoFinished;
                 break;
             case "InRange":
+                StartVideo();
                 videoPlayer.clip = inRangeVideoClip;
+                videoPlayer.loopPointReached += OnVideoEnd;
+                videoPlayer.Play();
+                
+
                 break;
             case "TooMuch":
+                StartVideo();
                 videoPlayer.clip = tooMuchVideoClip;
+                videoPlayer.Play();
+                videoPlayer.loopPointReached += OnVideoFinished;
                 break;
         }
 
         videoPlayer.Play();
     }
-
-
-    private void UpdateSliderValueText()
+    private void OnVideoEnd(VideoPlayer vp)
     {
-        sliderValueText.text = "Значення слайдера: " + sliderValue.ToString("F2");
+        videoPlayer.clip = finihVideo;
+        videoPlayer.loopPointReached += FinishGame;
+    }
+    private void FinishGame(VideoPlayer vp)
+    {
+        SceneManager.LoadScene("About The Game");
+    }
+    private void OnVideoFinished(VideoPlayer vp)
+    {
+        reloadButton.gameObject.SetActive(true);
+    }
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene("Mini game");
     }
 
     private void UpdateTimerText()
     {
-        timerText.text = "Час: " + currentTime.ToString("F1");
+        timerText.text = LocalizationSettings.StringDatabase.GetLocalizedString(mainRoadTextLocalizationKey) + currentTime.ToString("F1");
     }
 
     private void FillSlider()
@@ -132,8 +168,7 @@ public class Minigame : MonoBehaviour
         if (gameStarted && !gameEnded)
         {
             sliderValue += fillAmountPerClick;
-            sliderValue = Mathf.Clamp(sliderValue, 0, 100); 
-            UpdateSliderValueText();
+            sliderValue = Mathf.Clamp(sliderValue, 0, 100);
             UpdateSliderFillAmount();
         }
     }
@@ -155,7 +190,14 @@ public class Minigame : MonoBehaviour
             float randomDecrement = Random.Range(minFillSpeed, maxFillSpeed);
             sliderValue -= randomDecrement;
             sliderValue = Mathf.Clamp(sliderValue, 0, 100);
-            UpdateSliderValueText();
         }
+    }
+    private void StartVideo()
+    {
+        music.gameObject.SetActive(false);
+        info.gameObject.SetActive(false);
+        slider.gameObject.SetActive(false);
+        fillButton.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(false);
     }
 }

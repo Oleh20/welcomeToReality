@@ -1018,6 +1018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1387506384}
+  animationClip: {fileID: 7400000, guid: e2b102ea414ae60409f8e2859ea42847, type: 2}
 --- !u!114 &1914956123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1030,6 +1031,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d94e9d47c86ce64793ea215fe2b3d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: Menu
+  targetLocale: {fileID: 0}
+  pauseCanvas: {fileID: 0}
+  videoPlayer: {fileID: 0}
 --- !u!82 &1914956124
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1224,13 +1229,13 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1914956123}
         m_TargetAssemblyTypeName: ControlButtons, Assembly-CSharp
-        m_MethodName: LoadMenuScene
-        m_Mode: 1
+        m_MethodName: LoadSceneWithDelay
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 1.5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2

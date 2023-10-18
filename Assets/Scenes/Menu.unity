@@ -437,7 +437,6 @@ GameObject:
   - component: {fileID: 719909742}
   - component: {fileID: 719909741}
   - component: {fileID: 719909745}
-  - component: {fileID: 719909746}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -555,19 +554,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &719909746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719909740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8420afd78d6b221438549317616a1320, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 719909745}
 --- !u!1 &768160971
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,8 +568,8 @@ GameObject:
   - component: {fileID: 768160976}
   - component: {fileID: 768160975}
   - component: {fileID: 768160974}
-  - component: {fileID: 768160973}
   - component: {fileID: 768160979}
+  - component: {fileID: 768160973}
   m_Layer: 5
   m_Name: button about the game
   m_TagString: Untagged
@@ -622,6 +608,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d94e9d47c86ce64793ea215fe2b3d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: About the game
+  targetLocale: {fileID: 0}
+  pauseCanvas: {fileID: 0}
+  videoPlayer: {fileID: 0}
 --- !u!82 &768160974
 AudioSource:
   m_ObjectHideFlags: 0
@@ -816,18 +806,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 768160973}
         m_TargetAssemblyTypeName: ControlButtons, Assembly-CSharp
-        m_MethodName: LoadAboutTheGame
-        m_Mode: 1
+        m_MethodName: LoadSceneWithDelay
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 1.5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 768160979}
-        m_TargetAssemblyTypeName: AnimationFinalMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: AnimationAboutTheGame, Assembly-CSharp
         m_MethodName: PlayAnimationOnClick
         m_Mode: 1
         m_Arguments:
@@ -944,10 +934,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 768160971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8420afd78d6b221438549317616a1320, type: 3}
+  m_Script: {fileID: 11500000, guid: 930130b623a9104418bda6e89a638acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 719909745}
+  animationClip: {fileID: 7400000, guid: d63ea08ac7ad9f34c9cdfa1e8ac616b7, type: 2}
 --- !u!1 &998361056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,7 +996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ver. pre-alpha 0.9
+  m_text: ver. alpha 1.1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1230,8 +1221,8 @@ GameObject:
   - component: {fileID: 1101798827}
   - component: {fileID: 1101798826}
   - component: {fileID: 1101798825}
-  - component: {fileID: 1101798824}
   - component: {fileID: 1101798830}
+  - component: {fileID: 1101798824}
   m_Layer: 5
   m_Name: button language selection
   m_TagString: Untagged
@@ -1270,6 +1261,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d94e9d47c86ce64793ea215fe2b3d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: Language selection
+  targetLocale: {fileID: 0}
+  pauseCanvas: {fileID: 0}
+  videoPlayer: {fileID: 0}
 --- !u!82 &1101798825
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1464,18 +1459,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1101798824}
         m_TargetAssemblyTypeName: ControlButtons, Assembly-CSharp
-        m_MethodName: LoadLanguageSelection
-        m_Mode: 1
+        m_MethodName: LoadSceneWithDelay
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 1.5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1101798830}
-        m_TargetAssemblyTypeName: AnimationFinalMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: AnimationAboutTheGame, Assembly-CSharp
         m_MethodName: PlayAnimationOnClick
         m_Mode: 1
         m_Arguments:
@@ -1592,10 +1587,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1101798822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8420afd78d6b221438549317616a1320, type: 3}
+  m_Script: {fileID: 11500000, guid: 930130b623a9104418bda6e89a638acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 719909745}
+  animationClip: {fileID: 7400000, guid: d63ea08ac7ad9f34c9cdfa1e8ac616b7, type: 2}
 --- !u!1 &1116940504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,8 +1606,8 @@ GameObject:
   - component: {fileID: 1116940509}
   - component: {fileID: 1116940508}
   - component: {fileID: 1116940507}
-  - component: {fileID: 1116940506}
   - component: {fileID: 1116940512}
+  - component: {fileID: 1116940506}
   m_Layer: 5
   m_Name: button exit
   m_TagString: Untagged
@@ -1650,6 +1646,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d94e9d47c86ce64793ea215fe2b3d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: 
+  targetLocale: {fileID: 0}
+  pauseCanvas: {fileID: 0}
+  videoPlayer: {fileID: 0}
 --- !u!82 &1116940507
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1844,7 +1844,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1116940506}
         m_TargetAssemblyTypeName: ControlButtons, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1855,7 +1855,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1116940512}
-        m_TargetAssemblyTypeName: AnimationFinalMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: AnimationAboutTheGame, Assembly-CSharp
         m_MethodName: PlayAnimationOnClick
         m_Mode: 1
         m_Arguments:
@@ -1972,10 +1972,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1116940504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8420afd78d6b221438549317616a1320, type: 3}
+  m_Script: {fileID: 11500000, guid: 930130b623a9104418bda6e89a638acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 719909745}
+  animationClip: {fileID: 7400000, guid: d63ea08ac7ad9f34c9cdfa1e8ac616b7, type: 2}
 --- !u!1 &1935683901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,18 +2077,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1935683907}
         m_TargetAssemblyTypeName: ControlButtons, Assembly-CSharp
-        m_MethodName: LoadMiniGame
-        m_Mode: 1
+        m_MethodName: LoadSceneWithDelay
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 1.5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1935683909}
-        m_TargetAssemblyTypeName: AnimationFinalMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: AnimationAboutTheGame, Assembly-CSharp
         m_MethodName: PlayAnimationOnClick
         m_Mode: 1
         m_Arguments:
@@ -2259,6 +2260,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d94e9d47c86ce64793ea215fe2b3d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: Mini game
+  targetLocale: {fileID: 0}
+  pauseCanvas: {fileID: 0}
+  videoPlayer: {fileID: 0}
 --- !u!82 &1935683908
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2364,10 +2369,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1935683901}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8420afd78d6b221438549317616a1320, type: 3}
+  m_Script: {fileID: 11500000, guid: 930130b623a9104418bda6e89a638acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 719909745}
+  animationClip: {fileID: 7400000, guid: d63ea08ac7ad9f34c9cdfa1e8ac616b7, type: 2}
 --- !u!1 &2003881630
 GameObject:
   m_ObjectHideFlags: 0
