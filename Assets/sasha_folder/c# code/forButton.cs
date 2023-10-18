@@ -124,9 +124,9 @@ public class forButton : MonoBehaviour
 
     private void Update()
     {
-        texttransleter();
+        
       
-        SetTextForRoad();
+       // SetTextForRoad();
      
         
     }

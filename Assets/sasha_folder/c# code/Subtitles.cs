@@ -10,12 +10,12 @@ public class Subtitles : MonoBehaviour
     [SerializeField] private Text subtitleText;
     [SerializeField] private float letterDelay = 0.1f;
     [SerializeField] private float disableDelay = 1.0f;
-    private string currentSubtitle;
-    private string [] mainSubtitle;
-    private string [] secondarySubtitle;
-    private string [] deathSubtitle;
-    private string [] introSubtitle;
-    private int currentIndex;
+    [SerializeField] private string currentSubtitle;
+    [SerializeField] private string [] mainSubtitle;
+    [SerializeField] private string [] secondarySubtitle;
+    [SerializeField] private string [] deathSubtitle;
+    [SerializeField] private string [] introSubtitle;
+    [SerializeField] private int currentIndex;
 
     [SerializeField] private GameObject textBlock;
 
