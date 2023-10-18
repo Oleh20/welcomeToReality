@@ -37,6 +37,11 @@ public class ControlButtons : MonoBehaviour
     {
         StartCoroutine(LoadSceneWithDelay("Game", 1.0f));
     }
+    public void LoadMiniGame()
+    {
+        StartCoroutine(LoadSceneWithDelay("Mini game", 1.0f));
+    }
+    
 
     public void QuitGame()
     {
