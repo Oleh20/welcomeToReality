@@ -35,10 +35,14 @@ public class randomRoadC : MonoBehaviour
 
         if (a != 0)
         {
-            
-            gameObject.SetActive(true);
+            for (int i = 0; i < allBT.Length; i++) { allBT[i].GetComponent<forButton>().SetTextForRoad(); }
 
-            for (int i = 0; i < allBT.Length; i++) { allBT[i].GetComponent<forButton>().buttonIsActiv(); }
+                gameObject.SetActive(true);
+
+            for (int i = 0; i < allBT.Length; i++) { allBT[i].GetComponent<forButton>().buttonIsActiv();
+               
+            }
+           
 
             timer.GetComponent<timer10>().maketimeractiv();
         }

@@ -33,83 +33,30 @@ public class forButton : MonoBehaviour
 
     private Button button;
 
-    public string mainRoadTextLocalizationKey = "MainRoadText";
-   private int mainroadcount;
+    public string mainRoadTextLocalizationKey ;
+  
 
-    /*  public string[] mainRoadTextLocalizationKeys  ;
 
-      public string mainRoadTextLocalizationKey = "MainRoadText";
-
-      [SerializeField] private LocalizedStringDatabase StringDatabase = LocalizationSettings.StringDatabase ;
-   */
     private void Start()
     {
 
-        /* StringDatabase = LocalizationSettings.StringDatabase;
-
-            mainroadtext[0] = LocalizationSettings.StringDatabase.GetLocalizedString(mainRoadTextLocalizationKey);
-
-
-            for (int i = 0; i >= 10; i++)
-            {
-                mainroadtext[i] = LocalizationSettings.StringDatabase.GetLocalizedString(mainRoadTextLocalizationKeys[i]);
-
-
-            }    
-           */
-        /*
-        mainroadcount = rendervideocontroller.GetComponent<MainRoadFunk>().mainroadstep;
-
-        for (int i = 0; i < mainroadcount; i++) 
-        {
-            mainRoadTextLocalizationKey = "" + mainroadcount;
-
-            mainroadtext[i] = LocalizationSettings.StringDatabase.GetLocalizedString(mainRoadTextLocalizationKey);
-
-
-        }
-        */
            
 
 
 
-                    mainroadtext = new string[10];
+        mainroadtext = new string[10];
         Deathtext = new string[10];
         secondtext = new string[10];
 
-        //
-
-       //  mainroadtext[0] = LocalizationSettings.StringDatabase.GetLocalizedString(mainRoadTextLocalizationKey);
-
-        mainroadtext[0] = "asda";
-        mainroadtext[1] = "Так ми повинні ";
-
-        mainroadtext[2] = "так само як вас";
-        mainroadtext[3] = "файно";
-        mainroadtext[4] = "так для цього я приніс цей диплома";
-        mainroadtext[5] = "1";
-        // 
-        secondtext[0] = " Час тебе знищити";
-        secondtext[1] = "вас це не стосується";
-
-        secondtext[2] = "вас це не стосуєтся";
-        secondtext[3] = "гамно";
-        secondtext[4] = "ні годувати рибок";
-        secondtext[5] = "2";
-        //
-        Deathtext[0] = "17:15";
-       // Deathtext[1] = "пусто";
-
-        Deathtext[2] = "та мимо проходив";
-        Deathtext[3] = "бувало і краще";
-        Deathtext[4] = "вже нічого не можна вдіяти";
-        Deathtext[5] = "3";
-
+        
        button = GetComponent<Button>();
 
-       MadeCurenttRoad();
+        
+        
+        MadeCurenttRoad();
 
-
+        texttransleter();
+        SetTextForRoad();
 
 
 
@@ -152,16 +99,38 @@ public class forButton : MonoBehaviour
    /// </summary> text cod ruslan you can make it all delit
    /// 
 
+    void texttransleter()
+    {
+
+        for (int i = 0; i < 10; i++)
+        {
+            string deathway;
+            string secondway;
+
+            mainRoadTextLocalizationKey = i+ " Textmain" ;
+            deathway= i + " Textdeath";
+            secondway = i + " Textsecond";
+
+            mainroadtext[i] = LocalizationSettings.StringDatabase.GetLocalizedString(mainRoadTextLocalizationKey);
+            Deathtext[i] = LocalizationSettings.StringDatabase.GetLocalizedString(deathway);
+            secondtext[i]= LocalizationSettings.StringDatabase.GetLocalizedString(secondway);
+
+     
+        }
+
+
+    }
+
 
     private void Update()
     {
-       
-
-        
-       SetTextForRoad();
+        texttransleter();
+      
+        SetTextForRoad();
+     
         
     }
-    public void SetTextForRoad()
+     public void SetTextForRoad()
     {
         nummeroftext = rendervideocontroller.GetComponent<MainRoadFunk>().mainroadstep;
         ShouText = whatfortextyouneed();
@@ -169,7 +138,7 @@ public class forButton : MonoBehaviour
 
         gameObject.GetComponentInChildren<Text>().text = ShouText[nummeroftext];
 
-      
+     
        MakeButtonOff();
 
 
@@ -180,7 +149,7 @@ public class forButton : MonoBehaviour
         if (secondaryRoad) { ShouText = secondtext; }
         if (DeathRoad) { ShouText = Deathtext; }
 
-        if (ShouText == null) { Debug.Log("you lost text in c# forButton"); }
+     
 
         return ShouText;
     }
