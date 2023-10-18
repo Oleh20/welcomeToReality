@@ -126,8 +126,8 @@ public class forButton : MonoBehaviour
 
         gameObject.GetComponentInChildren<Text>().text = ShouText[nummeroftext];
 
-       // MakeButtonOff();
-       // MakeButtonOff();
+      
+       MakeButtonOff();
 
 
     }

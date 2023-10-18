@@ -25,15 +25,14 @@ public class MainRoadFunk : MonoBehaviour
     {
         Videos = GetComponent<AllVideos>().VideoClipListMain;
 
-        canvasBTback.SetActive(false);
+      //  canvasBTback.SetActive(false);
 
-        // player.clip = Videos[0];
     }
     public void playstart()
     {
         player.clip = Videos[0];
 
-        canvasbt.SetActive(true);
+        canvasbt.SetActive(false);
        
 
     }
