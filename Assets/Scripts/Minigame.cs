@@ -12,7 +12,6 @@ public class Minigame : MonoBehaviour
     public Button fillButton;
     public Slider slider;
     public VideoPlayer videoPlayer;
-    public GameObject videoObject;
     public float timeLimit = 10.0f;
     public float fillAmountPerClick = 12.0f;
     public float winRangeMin = 40.0f;
@@ -29,16 +28,12 @@ public class Minigame : MonoBehaviour
     public VideoClip tooLittleVideoClip;
     public VideoClip tooMuchVideoClip;
     public VideoClip inRangeVideoClip;
-    private bool gameVictory;
 
 
     private void Start()
     {
-        videoObject.SetActive(true);
         videoPlayer.playOnAwake = true;
         videoPlayer.Pause();
-
-        gameVictory = false; // Ініціалізуємо як "програш" на початку гри
 
         currentTime = timeLimit;
         sliderValue = 0;
@@ -54,6 +49,8 @@ public class Minigame : MonoBehaviour
         UpdateTimerText();
         RandomizeFillSpeed();
     }
+
+
 
     private void Update()
     {
@@ -74,11 +71,15 @@ public class Minigame : MonoBehaviour
             {
                 if (sliderValue >= winRangeMin && sliderValue <= winRangeMax)
                 {
-                    EndGame(true);
+                    EndGame("InRange");
                 }
-                else
+               else if(sliderValue <= winRangeMin)
                 {
-                    EndGame(false);
+                    EndGame("TooLittle");
+                }
+                else if(sliderValue >= winRangeMax)
+                {
+                    EndGame("TooMuch");
                 }
             }
 
@@ -93,38 +94,26 @@ public class Minigame : MonoBehaviour
         videoPlayer.Play();
     }
 
-    private void EndGame(GameResult result)
+    private void EndGame(string result)
     {
+
         gameEnded = true;
         gameStarted = false;
 
         switch (result)
         {
-            case GameResult.TooLittle:
-                // Гравець набрав замало (програш)
-                messageText.text = "Гра програна (замало)!";
+            case "TooLittle":
                 videoPlayer.clip = tooLittleVideoClip;
                 break;
-            case GameResult.InRange:
-                // Гравець набрав в заданому діапазоні (виграш)
-                messageText.text = "Гра виграна (в діапазоні)!";
+            case "InRange":
                 videoPlayer.clip = inRangeVideoClip;
                 break;
-            case GameResult.TooMuch:
-                // Гравець набрав забагато (програш)
-                messageText.text = "Гра програна (забагато)!";
+            case "TooMuch":
                 videoPlayer.clip = tooMuchVideoClip;
                 break;
         }
 
         videoPlayer.Play();
-    }
-
-    public enum GameResult
-    {
-        TooLittle,
-        InRange,
-        TooMuch
     }
 
 
@@ -143,7 +132,7 @@ public class Minigame : MonoBehaviour
         if (gameStarted && !gameEnded)
         {
             sliderValue += fillAmountPerClick;
-            sliderValue = Mathf.Clamp(sliderValue, 0, 100); // Обмеження значення слайдера в межах 0-100.
+            sliderValue = Mathf.Clamp(sliderValue, 0, 100); 
             UpdateSliderValueText();
             UpdateSliderFillAmount();
         }
