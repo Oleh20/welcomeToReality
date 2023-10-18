@@ -24,7 +24,7 @@ public class Subtitles : MonoBehaviour
     }
     public void StartSubtitles(string type, int index)
     {
-        Debug.Log(type + "" + index);
+        subtitleText.text = "";
         if (type == "death")
         {
             currentSubtitle = LocalizationSettings.StringDatabase.GetLocalizedString(deathSubtitle[index]);
