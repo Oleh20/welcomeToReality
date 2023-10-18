@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
 public class forButton : MonoBehaviour
@@ -31,14 +32,56 @@ public class forButton : MonoBehaviour
    
 
     private Button button;
+
+    public string mainRoadTextLocalizationKey = "MainRoadText";
+   private int mainroadcount;
+
+    /*  public string[] mainRoadTextLocalizationKeys  ;
+
+      public string mainRoadTextLocalizationKey = "MainRoadText";
+
+      [SerializeField] private LocalizedStringDatabase StringDatabase = LocalizationSettings.StringDatabase ;
+   */
     private void Start()
     {
-        mainroadtext = new string[10];
+
+        /* StringDatabase = LocalizationSettings.StringDatabase;
+
+            mainroadtext[0] = LocalizationSettings.StringDatabase.GetLocalizedString(mainRoadTextLocalizationKey);
+
+
+            for (int i = 0; i >= 10; i++)
+            {
+                mainroadtext[i] = LocalizationSettings.StringDatabase.GetLocalizedString(mainRoadTextLocalizationKeys[i]);
+
+
+            }    
+           */
+        /*
+        mainroadcount = rendervideocontroller.GetComponent<MainRoadFunk>().mainroadstep;
+
+        for (int i = 0; i < mainroadcount; i++) 
+        {
+            mainRoadTextLocalizationKey = "" + mainroadcount;
+
+            mainroadtext[i] = LocalizationSettings.StringDatabase.GetLocalizedString(mainRoadTextLocalizationKey);
+
+
+        }
+        */
+           
+
+
+
+                    mainroadtext = new string[10];
         Deathtext = new string[10];
         secondtext = new string[10];
 
         //
-        mainroadtext[0] = "Важка, велів би бути вдома";
+
+       //  mainroadtext[0] = LocalizationSettings.StringDatabase.GetLocalizedString(mainRoadTextLocalizationKey);
+
+        mainroadtext[0] = "asda";
         mainroadtext[1] = "Так ми повинні ";
 
         mainroadtext[2] = "так само як вас";
@@ -115,7 +158,7 @@ public class forButton : MonoBehaviour
        
 
         
-        SetTextForRoad();
+       SetTextForRoad();
         
     }
     public void SetTextForRoad()

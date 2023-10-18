@@ -42,6 +42,22 @@ MonoBehaviour:
     m_Localized: no
     m_Metadata:
       m_Items: []
+  - m_Id: 2555565930659840
+    m_Localized: text 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2559667616038912
+    m_Localized: 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2559671537713152
+    m_Localized: 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2561004328140800
+    m_Localized: 0
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

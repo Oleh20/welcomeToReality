@@ -39,6 +39,22 @@ MonoBehaviour:
     m_Key: no
     m_Metadata:
       m_Items: []
+  - m_Id: 2555565930659840
+    m_Key: MainRoadText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2559667616038912
+    m_Key: 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2559671537713152
+    m_Key: 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2561004328140800
+    m_Key: 0
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

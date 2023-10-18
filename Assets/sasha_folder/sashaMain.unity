@@ -261,6 +261,7 @@ MonoBehaviour:
   bottunMainRoad: 0
   secondaryRoad: 1
   DeathRoad: 0
+  mainRoadTextLocalizationKey: MainRoadText
 --- !u!1 &152504418
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,7 +923,7 @@ MonoBehaviour:
   canvasBTback: {fileID: 1947615753}
   canvasbt: {fileID: 1886952100}
   player: {fileID: 428784305}
-  itsaveroad: 04000000
+  itsaveroad: 03000000
   mainroadstep: 0
   videobetween: []
   playbetween: 
@@ -1178,6 +1179,7 @@ MonoBehaviour:
   bottunMainRoad: 1
   secondaryRoad: 0
   DeathRoad: 0
+  mainRoadTextLocalizationKey: MainRoadText
 --- !u!1 &749784656
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,6 +1997,7 @@ MonoBehaviour:
   bottunMainRoad: 0
   secondaryRoad: 0
   DeathRoad: 1
+  mainRoadTextLocalizationKey: MainRoadText
 --- !u!1 &1886952100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,7 +2050,7 @@ MonoBehaviour:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1980, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

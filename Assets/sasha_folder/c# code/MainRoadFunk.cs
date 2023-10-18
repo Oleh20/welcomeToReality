@@ -32,7 +32,7 @@ public class MainRoadFunk : MonoBehaviour
     {
         player.clip = Videos[0];
 
-        canvasbt.SetActive(false);
+      //  canvasbt.SetActive(false);
        
 
     }
