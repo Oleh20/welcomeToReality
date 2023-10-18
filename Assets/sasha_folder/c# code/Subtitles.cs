@@ -24,6 +24,7 @@ public class Subtitles : MonoBehaviour
     }
     public void StartSubtitles(string type, int index)
     {
+        textBlock.SetActive(true);
         subtitleText.text = "";
         if (type == "death")
         {

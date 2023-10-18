@@ -12,4 +12,5 @@ EditorBuildSettings:
     path: Assets/sasha_folder/sashaMain.unity
     guid: 8139b4af79b693e4bbd7508bc4c1ffee
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 40f5f40e970da924ca0b21db35d3d7e3, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: e71c502cb88fa4540aa6d009ff339d90, type: 2}

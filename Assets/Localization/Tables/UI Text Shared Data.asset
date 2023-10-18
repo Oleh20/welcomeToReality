@@ -72,11 +72,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2585601085751296
-    m_Key: New Entry 2
+    m_Key: start intro1
     m_Metadata:
       m_Items: []
   - m_Id: 2585601962360832
-    m_Key: New Entry 3
+    m_Key: start intro2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2621068971819008
+    m_Key: secondary1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2621171673546752
+    m_Key: death1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2621390549106688
+    m_Key: main1
     m_Metadata:
       m_Items: []
   m_Metadata:

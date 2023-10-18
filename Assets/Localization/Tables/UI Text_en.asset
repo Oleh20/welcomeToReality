@@ -71,7 +71,30 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2585599911346176
-    m_Localized: sdafAFwegfGWFGGFWFSDFWDFSDFSADASDASDADADAD
+    m_Localized: Well, in this game you will have to decide the fate of the whole
+      world and only you will decide the end of this game.You have the right to decide
+      what is good and what is bad, and remember that every choice you make has its
+      consequences. Are you ready to continue your journey?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2585601085751296
+    m_Localized: Well, if your answer is yes, then we can begin.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2585601962360832
+    m_Localized: Well, you have no choice, so you will have to play.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2621068971819008
+    m_Localized: secondary1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2621171673546752
+    m_Localized: death1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2621390549106688
+    m_Localized: main1
     m_Metadata:
       m_Items: []
   references:
