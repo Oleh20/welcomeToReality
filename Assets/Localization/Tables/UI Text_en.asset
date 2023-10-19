@@ -35,11 +35,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1824373442822144
-    m_Localized: yes
+    m_Localized: Yes
     m_Metadata:
       m_Items: []
   - m_Id: 1824469978923008
-    m_Localized: no
+    m_Localized: Not
     m_Metadata:
       m_Items: []
   - m_Id: 2555565930659840
@@ -137,6 +137,33 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2941097055567872
     m_Localized: what are you need ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2665560842391552
+    m_Localized: Calculate the force of throwing the suitcase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2665692505788416
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2665739842703360
+    m_Localized: 'Time: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2667424598151168
+    m_Localized: Press
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2667575945416704
+    m_Localized: Try again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2687196584955904
+    m_Localized: 'Are you sure you want to exit?
+
+      Your progress will not be
+      saved!'
     m_Metadata:
       m_Items: []
   references:

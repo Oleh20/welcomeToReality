@@ -36,7 +36,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1824469978923008
-    m_Key: no
+    m_Key: Not
     m_Metadata:
       m_Items: []
   - m_Id: 2555565930659840
@@ -129,6 +129,30 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2941097055567872
     m_Key: 1 Textdeath
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2665560842391552
+    m_Key: power
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2665692505788416
+    m_Key: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2665739842703360
+    m_Key: Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2667424598151168
+    m_Key: Press
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2667575945416704
+    m_Key: restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2687196584955904
+    m_Key: warning
     m_Metadata:
       m_Items: []
   m_Metadata:

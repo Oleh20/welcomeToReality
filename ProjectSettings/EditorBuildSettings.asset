@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 7ad685c808587334f83f96477a29e9c8
+  - enabled: 1
+    path: Assets/Scenes/Mini game.unity
+    guid: 1bca9949d692a0648b56e77784255b36
   - enabled: 0
     path: Assets/sasha_folder/sashaMain.unity
     guid: 8139b4af79b693e4bbd7508bc4c1ffee
