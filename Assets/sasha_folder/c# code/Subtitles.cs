@@ -35,10 +35,13 @@ public class Subtitles : MonoBehaviour
         {
             currentSubtitle = LocalizationSettings.StringDatabase.GetLocalizedString(mainSubtitle[index]);
             StartCoroutine(ShowSubtitle());
+          
         }
         else if (type == "intro")
         {
             currentSubtitle = LocalizationSettings.StringDatabase.GetLocalizedString(introSubtitle[index]);
+            
+            StopCoroutine(ShowSubtitle());
             StartCoroutine(ShowSubtitle());
         }
         else
@@ -49,8 +52,11 @@ public class Subtitles : MonoBehaviour
     }
     private IEnumerator ShowSubtitle()
     {
+        
         textBlock.SetActive(true);
-        while (currentIndex < currentSubtitle.Length)
+        
+        
+            while (currentIndex < currentSubtitle.Length)
         {
             subtitleText.text += currentSubtitle[currentIndex];
             currentIndex++;
@@ -58,6 +64,7 @@ public class Subtitles : MonoBehaviour
         }
         yield return new WaitForSeconds(disableDelay);
         textBlock.SetActive(false);
+        
     }
-
+    
 }

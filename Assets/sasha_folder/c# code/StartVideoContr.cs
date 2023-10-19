@@ -16,7 +16,7 @@ public class StartVideoContr : MonoBehaviour
 
     private VideoPlayer player;
 
-  //  [SerializeField] private Subtitles subtitlesComponent;
+   [SerializeField] private Subtitles subtitlesComponent;
     void Start()
     {
         if (youwantstart)
@@ -26,7 +26,7 @@ public class StartVideoContr : MonoBehaviour
             player.clip = startvideo;
 
             player.Play();
-           // subtitlesComponent.StartSubtitles("intro", 0);
+           subtitlesComponent.StartSubtitles("intro", 0);
             player.GetComponent<VideoPlayer>().loopPointReached += showBT;
         }
     }
@@ -45,8 +45,8 @@ public class StartVideoContr : MonoBehaviour
     {
 
         player.clip = videoarr[0];
-       // subtitlesComponent.StartSubtitles("intro", 1);
-        StartCoroutine(delay());
+        subtitlesComponent.StartSubtitles("intro", 1);
+       // StartCoroutine(delay());
 
      
 
@@ -54,8 +54,8 @@ public class StartVideoContr : MonoBehaviour
     public void roadtwo () 
     {
         player.clip = videoarr[1];
-       // subtitlesComponent.StartSubtitles("intro", 2);
-        StartCoroutine(delay());
+        subtitlesComponent.StartSubtitles("intro", 2);
+       // StartCoroutine(delay());
 
         
     }
