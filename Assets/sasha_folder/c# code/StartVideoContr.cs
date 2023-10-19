@@ -32,12 +32,13 @@ public class StartVideoContr : MonoBehaviour
     }
     void showBT (VideoPlayer vp)
     {
+        player.GetComponent<MainRoadFunk>().lastmap();
+
         if (canvas != null) { canvas.gameObject.SetActive(true); }
 
-        if (player.GetComponent<MainRoadFunk>().mainroadstep >= 6)
-        {
-            player.GetComponent<MainRoadFunk>().lastmap();
-        }
+        
+            
+        
     }
     
    public void roadone()

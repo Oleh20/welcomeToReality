@@ -2,10 +2,12 @@ using System.Collections;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 using UnityEngine.Video;
 
 public class MainRoadFunk : MonoBehaviour
 {
+   
 
     public GameObject canvasBTback;
     public GameObject canvasbt;
@@ -88,7 +90,7 @@ public class MainRoadFunk : MonoBehaviour
         }
        
     }
-    public void lastmap()
+    public void lastmap()   
     {
         if (mainroadstep >= 6)
         
@@ -96,6 +98,10 @@ public class MainRoadFunk : MonoBehaviour
             canvasBTback.SetActive(false);
             canvasbt.SetActive(false);
             endofgame.SetActive(true);
+            player.Pause();
+
+           
+
 
         }
 

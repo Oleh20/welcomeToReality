@@ -32,11 +32,7 @@ public class randomRoadC : MonoBehaviour
     private void Update()
     {
 
-        bool a = player.GetComponent<MainRoadFunk>().itWasStarted;
-        if (a)
-        {
-            player.GetComponent<VideoPlayer>().loopPointReached += canvasisActiv;
-        }
+    
        
     }
 
@@ -45,19 +41,24 @@ public class randomRoadC : MonoBehaviour
       bool a =  player.GetComponent<MainRoadFunk>().itWasStarted;
         if (a)
         {
-            for (int i = 0; i < allBT.Length; i++) { allBT[i].GetComponent<forButton>().SetTextForRoad(); }
-            gameObject.SetActive(true);
-
-            for (int i = 0; i < allBT.Length; i++)
+            if (player.GetComponent<MainRoadFunk>().mainroadstep >= 6) { }
+            else
             {
-                allBT[i].GetComponent<forButton>().buttonIsActiv();
+
+
+                for (int i = 0; i < allBT.Length; i++) { allBT[i].GetComponent<forButton>().SetTextForRoad(); }
+                gameObject.SetActive(true);
+
+                for (int i = 0; i < allBT.Length; i++)
+                {
+                    allBT[i].GetComponent<forButton>().buttonIsActiv();
+
+                }
+
+
+                timer.GetComponent<timer10>().maketimeractiv();
 
             }
-            Debug.Log("asdasdasdasdasd");
-
-            timer.GetComponent<timer10>().maketimeractiv();
-
-
         }
        
     }

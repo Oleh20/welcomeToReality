@@ -49,8 +49,10 @@ public class DeathAfterVideo : MonoBehaviour
         if (deathstep >= 5)
 
         {
+
             playerrender.clip = Videos[6];
 
+            playerrender.Play();
         }
 
     }
