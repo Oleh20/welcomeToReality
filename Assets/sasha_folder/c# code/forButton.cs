@@ -155,9 +155,10 @@ public class forButton : MonoBehaviour
     }
     public void MakeButtonOff()
     {
-        if (gameObject.GetComponentInChildren<Text>().text == "") { button.gameObject.SetActive(false);  }
+        if (gameObject.GetComponentInChildren<Text>().text == "No translation found for '' in UI Text" || gameObject.GetComponentInChildren<Text>().text == null) { button.gameObject.SetActive(false);  }
+       
 
-        
+
     }
     public void buttonIsActiv() { button.gameObject.SetActive(true); }
 }

@@ -79,18 +79,6 @@ MonoBehaviour:
     m_Key: start intro2
     m_Metadata:
       m_Items: []
-  - m_Id: 2621068971819008
-    m_Key: secondary1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2621171673546752
-    m_Key: death1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2621390549106688
-    m_Key: main1
-    m_Metadata:
-      m_Items: []
   - m_Id: 2654943487934464
     m_Key: 2 Textsecond
     m_Metadata:
@@ -137,6 +125,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2657396883144704
     m_Key: 6 Textdeath
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2941097055567872
+    m_Key: 1 Textdeath
     m_Metadata:
       m_Items: []
   m_Metadata:
