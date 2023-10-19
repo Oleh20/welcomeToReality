@@ -519,6 +519,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d94e9d47c86ce64793ea215fe2b3d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: Menu
+  targetLocale: {fileID: 11400000, guid: e83fe332afda03247afcd41519d064ce, type: 2}
+  pauseCanvas: {fileID: 0}
+  videoPlayer: {fileID: 0}
 --- !u!114 &990128370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,19 +581,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 990128369}
         m_TargetAssemblyTypeName: ControlButtons, Assembly-CSharp
-        m_MethodName: SwitchToUA
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 990128374}
-        m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
-        m_MethodName: PlayAnimationOnClick
+        m_MethodName: SwitchTo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -601,7 +593,19 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 990128369}
         m_TargetAssemblyTypeName: ControlButtons, Assembly-CSharp
-        m_MethodName: LoadMenuScene
+        m_MethodName: LoadSceneWithDelay
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 990128374}
+        m_TargetAssemblyTypeName: AnimationAboutTheGame, Assembly-CSharp
+        m_MethodName: PlayAnimationOnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -754,10 +758,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 990128367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64571162da6abea449d64bf641beefea, type: 3}
+  m_Script: {fileID: 11500000, guid: 930130b623a9104418bda6e89a638acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1614778425}
+  animationClip: {fileID: 7400000, guid: e90bfbc7989bc41499607aa5d56f8b55, type: 2}
 --- !u!1 &1377354268
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,8 +970,8 @@ GameObject:
   - component: {fileID: 2034620456}
   - component: {fileID: 2034620455}
   - component: {fileID: 2034620454}
-  - component: {fileID: 2034620457}
   - component: {fileID: 2034620459}
+  - component: {fileID: 2034620457}
   - component: {fileID: 2034620458}
   m_Layer: 5
   m_Name: EN button
@@ -1052,7 +1057,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2034620457}
         m_TargetAssemblyTypeName: ControlButtons, Assembly-CSharp
-        m_MethodName: SwitchToEN
+        m_MethodName: SwitchTo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1063,7 +1068,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2034620459}
-        m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
+        m_TargetAssemblyTypeName: AnimationAboutTheGame, Assembly-CSharp
         m_MethodName: PlayAnimationOnClick
         m_Mode: 1
         m_Arguments:
@@ -1076,13 +1081,13 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2034620457}
         m_TargetAssemblyTypeName: ControlButtons, Assembly-CSharp
-        m_MethodName: LoadMenuScene
-        m_Mode: 1
+        m_MethodName: LoadSceneWithDelay
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 1.5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -1136,6 +1141,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d94e9d47c86ce64793ea215fe2b3d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: Menu
+  targetLocale: {fileID: 11400000, guid: b943da5478f4a5e419c0885f58ca06eb, type: 2}
+  pauseCanvas: {fileID: 0}
+  videoPlayer: {fileID: 0}
 --- !u!82 &2034620458
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1241,10 +1250,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2034620451}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64571162da6abea449d64bf641beefea, type: 3}
+  m_Script: {fileID: 11500000, guid: 930130b623a9104418bda6e89a638acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1614778425}
+  animationClip: {fileID: 7400000, guid: e90bfbc7989bc41499607aa5d56f8b55, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
