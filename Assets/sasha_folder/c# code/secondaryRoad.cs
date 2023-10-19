@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 public class secondaryRoad : MonoBehaviour
@@ -13,6 +14,7 @@ public class secondaryRoad : MonoBehaviour
     private void Start()
     {
         Videos = GetComponent<AllVideos>().VideoClipListSecondary;
+        othersteps = GetComponent<MainRoadFunk>().mainroadstep;
     }
    
 
@@ -24,12 +26,24 @@ public class secondaryRoad : MonoBehaviour
 
         othersteps = GetComponent<MainRoadFunk>().mainroadstep;
         player.clip = Videos[othersteps];
-
+        
      
 
         GetComponent<MainRoadFunk>().GoBack();
 
     }
-   
+    public void endofgame()
+    {
+        othersteps = GetComponent<MainRoadFunk>().mainroadstep;
+        if (othersteps >= 5)
+
+        {
+            SceneManager.LoadScene("Mini game");
+
+        }
+
+
+    }
+
 
 }

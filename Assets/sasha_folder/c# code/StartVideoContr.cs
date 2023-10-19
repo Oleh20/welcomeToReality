@@ -11,10 +11,12 @@ public class StartVideoContr : MonoBehaviour
 
     public VideoClip[] videoarr = new VideoClip[2];
 
-
+    public GameObject btcanvas;
     public VideoClip startvideo;
 
     private VideoPlayer player;
+
+  //  [SerializeField] private Subtitles subtitlesComponent;
     void Start()
     {
         if (youwantstart)
@@ -24,23 +26,26 @@ public class StartVideoContr : MonoBehaviour
             player.clip = startvideo;
 
             player.Play();
-
+           // subtitlesComponent.StartSubtitles("intro", 0);
             player.GetComponent<VideoPlayer>().loopPointReached += showBT;
         }
     }
     void showBT (VideoPlayer vp)
     {
-       canvas.gameObject.SetActive(true);
+        player.GetComponent<MainRoadFunk>().lastmap();
 
+        if (canvas != null) { canvas.gameObject.SetActive(true); }
 
-
+        
+            
+        
     }
     
    public void roadone()
     {
 
         player.clip = videoarr[0];
-
+       // subtitlesComponent.StartSubtitles("intro", 1);
         StartCoroutine(delay());
 
      
@@ -49,6 +54,7 @@ public class StartVideoContr : MonoBehaviour
     public void roadtwo () 
     {
         player.clip = videoarr[1];
+       // subtitlesComponent.StartSubtitles("intro", 2);
         StartCoroutine(delay());
 
         
@@ -56,7 +62,7 @@ public class StartVideoContr : MonoBehaviour
     public void startend ()
     
     {
-        Debug.Log("startend");
+       
 
         player.GetComponent<MainRoadFunk>().playstart();
     

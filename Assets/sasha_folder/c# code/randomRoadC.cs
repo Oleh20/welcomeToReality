@@ -15,40 +15,52 @@ public class randomRoadC : MonoBehaviour
 
     public GameObject player;
 
-    private int it;
    
+
+    public GameObject timer;
+    private int a = 0;
+
     private void Start()
     {
-       // gameObject.SetActive(false);
-        player.GetComponent<VideoPlayer>().loopPointReached += canvasisActiv;
-
-        Timer();
-
-    }
-     void Timer()
-    {
-        float timer = 10;
-
-        while (gameObject.activeInHierarchy)
         
-        {
-          
-
-
-        Debug.Log(Time.deltaTime);
-        }
-
+        gameObject.SetActive(false);
+        player.GetComponent<VideoPlayer>().loopPointReached += canvasisActiv;
+    
+      
 
     }
+    private void Update()
+    {
+
+    
+       
+    }
+
     void canvasisActiv(VideoPlayer vp)
     {
-        Timer();
-       gameObject.SetActive(true);
+      bool a =  player.GetComponent<MainRoadFunk>().itWasStarted;
+        if (a)
+        {
+            if (player.GetComponent<MainRoadFunk>().mainroadstep >= 6) { }
+            else
+            {
 
-        for (int i = 0; i < allBT.Length; i++) { allBT[i].GetComponent<forButton>().buttonIsActiv(); }
+
+                for (int i = 0; i < allBT.Length; i++) { allBT[i].GetComponent<forButton>().SetTextForRoad(); }
+                gameObject.SetActive(true);
+
+                for (int i = 0; i < allBT.Length; i++)
+                {
+                    allBT[i].GetComponent<forButton>().buttonIsActiv();
+
+                }
+
+
+                timer.GetComponent<timer10>().maketimeractiv();
+
+            }
+        }
        
-
-
     }
   
 

@@ -16,19 +16,19 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 10d0927cb0995e54d87c32aae5886bf7
   m_Entries:
   - m_Id: 31329570816
-    m_Key: Select Language
+    m_Key: "\u0412\u0438\u0431\u0456\u0440 \u043C\u043E\u0432\u0438"
     m_Metadata:
       m_Items: []
   - m_Id: 23392420057088
-    m_Key: New game
+    m_Key: "\u041D\u043E\u0432\u0430 \u0413\u0440\u0430"
     m_Metadata:
       m_Items: []
   - m_Id: 30658972045312
-    m_Key: Language selection
+    m_Key: "\u041F\u043E\u0432\u0435\u0440\u043D\u0435\u043D\u043D\u044F"
     m_Metadata:
       m_Items: []
   - m_Id: 30793458208768
-    m_Key: Exit
+    m_Key: "\u0412\u0438\u0445\u0456\u0434"
     m_Metadata:
       m_Items: []
   - m_Id: 1824373442822144
@@ -39,28 +39,96 @@ MonoBehaviour:
     m_Key: Not
     m_Metadata:
       m_Items: []
-  - m_Id: 2163689388199936
-    m_Key: About the game
+  - m_Id: 2555565930659840
+    m_Key: 2 Textdeath
     m_Metadata:
       m_Items: []
-  - m_Id: 2271985482813440
-    m_Key: Sania
+  - m_Id: 2559667616038912
+    m_Key: 1 Textmain
     m_Metadata:
       m_Items: []
-  - m_Id: 2272181587496960
-    m_Key: Menu
+  - m_Id: 2559671537713152
+    m_Key: 2 Textmain
     m_Metadata:
       m_Items: []
-  - m_Id: 2279054063652864
-    m_Key: est
+  - m_Id: 2561004328140800
+    m_Key: 0 Textmain
     m_Metadata:
       m_Items: []
-  - m_Id: 2280046272401408
-    m_Key: author
+  - m_Id: 2573656030920704
+    m_Key: 0 Textdeath
     m_Metadata:
       m_Items: []
-  - m_Id: 2280218540855296
-    m_Key: Patrons
+  - m_Id: 2573733201920000
+    m_Key: 0 Textsecond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2585597168271360
+    m_Key: 1 Textsecond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2585599911346176
+    m_Key: start intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2585601085751296
+    m_Key: start intro1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2585601962360832
+    m_Key: start intro2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2654943487934464
+    m_Key: 2 Textsecond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2655059649183744
+    m_Key: 3 Textmain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2655200745570304
+    m_Key: 3 Textdeath
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2655291845853184
+    m_Key: 3 Textsecond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2655349525921792
+    m_Key: 4 Textmain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656429273989120
+    m_Key: 4 Textsecond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656515039117312
+    m_Key: 4 Textdeath
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656600368037888
+    m_Key: 5 Textmain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2657082645889024
+    m_Key: 5 Textsecond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2657180855517184
+    m_Key: 6 Textmain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2657280717701120
+    m_Key: 6 Textsecond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2657396883144704
+    m_Key: 6 Textdeath
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2941097055567872
+    m_Key: 1 Textdeath
     m_Metadata:
       m_Items: []
   - m_Id: 2665560842391552

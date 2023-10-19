@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 30658972045312
-    m_Localized: Language selection
+    m_Localized: Choose a language
     m_Metadata:
       m_Items: []
   - m_Id: 30793458208768
@@ -42,50 +42,101 @@ MonoBehaviour:
     m_Localized: Not
     m_Metadata:
       m_Items: []
-  - m_Id: 2163689388199936
-    m_Localized: About the game
+  - m_Id: 2555565930659840
+    m_Localized: and I passed by
     m_Metadata:
       m_Items: []
-  - m_Id: 2271985482813440
-    m_Localized: There should be a game here, but Sanya hasn't made it yet, so you
-      can go back and look at the beautiful menu
+  - m_Id: 2559667616038912
+    m_Localized: So we should
     m_Metadata:
       m_Items: []
-  - m_Id: 2272181587496960
-    m_Localized: Menu
+  - m_Id: 2559671537713152
+    m_Localized: just like you
     m_Metadata:
       m_Items: []
-  - m_Id: 2279054063652864
-    m_Localized: Created 10.2023
+  - m_Id: 2561004328140800
+    m_Localized: It is difficult, I would rather be at home
     m_Metadata:
       m_Items: []
-  - m_Id: 2280046272401408
-    m_Localized: 'The game is being developed by:
-
-      The author of the idea,
-      editor and operator - Oleg Pagulych
-
-      Actors - Oleksandr Dovhiy and Oleksandr
-      Klymenko
-
-      Programmers - Ruslan Pagulych and Oleksandr Klymenko
-
-      Localization
-      editor and tester - Karyna Medvedieva'
+  - m_Id: 2573656030920704
+    m_Localized: 17:15
     m_Metadata:
       m_Items: []
-  - m_Id: 2280218540855296
-    m_Localized: 'You can support us to create new products
+  - m_Id: 2573733201920000
+    m_Localized: Time to destroy you
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2585597168271360
+    m_Localized: Who are you?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2585599911346176
+    m_Localized: Well, in this game you will have to decide the fate of the whole
+      world and only you will decide the end of this game.You have the right to decide
+      what is good and what is bad, and remember that every choice you make has its
+      consequences. Are you ready to continue your journey?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2585601085751296
+    m_Localized: Well, if your answer is yes, then we can begin.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2585601962360832
+    m_Localized: Well, you have no choice, so you will have to play.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2654943487934464
+    m_Localized: it doesn't concern you
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2655059649183744
+    m_Localized: rubbish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2655200745570304
+    m_Localized: nicely
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2655291845853184
+    m_Localized: '
 
-      4441 1144 5336
-      2947
-
-      and in return we will write your name here forever.
-
-      Don''t
-      forget to subscribe)
-
-      Patrons:'
+      it was better'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2655349525921792
+    m_Localized: that's why I brought this diploma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656429273989120
+    m_Localized: No, feed the fish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656515039117312
+    m_Localized: nothing can be done
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656600368037888
+    m_Localized: the same super duper secret documents?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2657082645889024
+    m_Localized: cookies in the diplomat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2657396883144704
+    m_Localized: no, I changed my mind
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2657280717701120
+    m_Localized: I trust you, let's just shake hands
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2657180855517184
+    m_Localized: Let's go to 1,2 ... and stomping spaces
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2941097055567872
+    m_Localized: what are you need ?
     m_Metadata:
       m_Items: []
   - m_Id: 2665560842391552

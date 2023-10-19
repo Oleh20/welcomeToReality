@@ -11,10 +11,14 @@ public class DeathAfterVideo : MonoBehaviour
 
     VideoClip[] Videos;
     public VideoPlayer playerrender;
+    [SerializeField] private Subtitles subtitlesComponent;
 
     private void Start()
     {
-        Videos = GetComponent<AllVideos>().VideoClipListSecondary;
+        Videos = GetComponent<AllVideos>().VideoClipListDeath;
+
+        deathstep = GetComponent<MainRoadFunk>().mainroadstep;
+
     }
 
 
@@ -22,10 +26,35 @@ public class DeathAfterVideo : MonoBehaviour
     {
         deathstep = GetComponent<MainRoadFunk>().mainroadstep;
         playerrender.clip = Videos[deathstep];
+        //  subtitlesComponent.StartSubtitles("death", deathstep);
+
+
+        
+
+       
+       
+            GetComponent<MainRoadFunk>().GoBack();
+       
+       
+
+    }
+   
 
 
 
-        GetComponent<MainRoadFunk>().GoBack();
+  
+    public void noantwort() 
+    {
+        deathstep = GetComponent<MainRoadFunk>().mainroadstep;
+        if (deathstep >= 5)
+
+        {
+
+            playerrender.clip = Videos[6];
+
+            playerrender.Play();
+        }
+
     }
    
     
