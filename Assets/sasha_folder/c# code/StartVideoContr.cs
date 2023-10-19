@@ -46,7 +46,7 @@ public class StartVideoContr : MonoBehaviour
 
         player.clip = videoarr[0];
         subtitlesComponent.StartSubtitles("intro", 1);
-       // StartCoroutine(delay());
+       StartCoroutine(delay());
 
      
 
@@ -55,7 +55,7 @@ public class StartVideoContr : MonoBehaviour
     {
         player.clip = videoarr[1];
         subtitlesComponent.StartSubtitles("intro", 2);
-       // StartCoroutine(delay());
+       StartCoroutine(delay());
 
         
     }

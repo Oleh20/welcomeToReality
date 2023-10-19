@@ -54,16 +54,15 @@ public class Subtitles : MonoBehaviour
     {
         
         textBlock.SetActive(true);
-        
-        
-            while (currentIndex < currentSubtitle.Length)
+        currentIndex = 0;
+        while (currentIndex < currentSubtitle.Length)
         {
             subtitleText.text += currentSubtitle[currentIndex];
             currentIndex++;
             yield return new WaitForSeconds(letterDelay);
         }
         yield return new WaitForSeconds(disableDelay);
-        textBlock.SetActive(false);
+       
         
     }
     
