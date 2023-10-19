@@ -62,8 +62,13 @@ public class Subtitles : MonoBehaviour
             yield return new WaitForSeconds(letterDelay);
         }
         yield return new WaitForSeconds(disableDelay);
-       
-        
+        currentIndex = 0;
+
     }
+    public void SetTextOf() { currentIndex = 0;
+
+        subtitleText.text = null;
+    }
+    
     
 }

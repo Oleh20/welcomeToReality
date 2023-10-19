@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,7 +8,14 @@ using UnityEngine.Video;
 
 public class MainRoadFunk : MonoBehaviour
 {
-   
+    [SerializeField] private Subtitles subtitlesComponent;
+    [SerializeField]
+
+   private List<int> delaysub = new List<int>();
+
+    [SerializeField] private List<int> delaysubdeath = new List<int>();
+
+    [SerializeField] private List<int> delaysubsecond = new List<int>();
 
     public GameObject canvasBTback;
     public GameObject canvasbt;
@@ -27,7 +35,7 @@ public class MainRoadFunk : MonoBehaviour
 
     public GameObject endofgame;
 
-   // [SerializeField] private Subtitles subtitlesComponent;
+   
 
     public bool itWasStarted = false;
     private void Start()
@@ -35,15 +43,15 @@ public class MainRoadFunk : MonoBehaviour
         endofgame.SetActive(false);
         Videos = GetComponent<AllVideos>().VideoClipListMain;
 
-      //  canvasBTback.SetActive(false);
+  
 
     }
     public void playstart()
     {
-        player.clip = Videos[0];
-       // subtitlesComponent.StartSubtitles("intro", 3);
-        //  canvasbt.SetActive(false);
 
+        player.clip = Videos[0];
+     
+        StartCoroutine(subtitlesdelay(delaysub[mainroadstep], "main",mainroadstep));
         itWasStarted = true;
     }
 
@@ -60,22 +68,38 @@ public class MainRoadFunk : MonoBehaviour
             mainroadstep++;
             player.clip = Videos[mainroadstep];
         }
-       // subtitlesComponent.StartSubtitles("main", mainroadstep);
+      
         player.Play();
 
+        
+
+        
+
+
+
+        StartCoroutine(subtitlesdelay(delaysub[mainroadstep], "main", mainroadstep));
 
         if (mainroadstep == -1) { mainroadstep = 0; }
        canvasbt.SetActive(false);
 
-
+        
         AreYouNeedPlayBetween();
         
-     //   StartCoroutine(videoplayback1());
+    
     }
   
-    public void GoBack()
+    public void GoBack(string line)
     {
+        if (line == "death")
+        {
 
+           // StartCoroutine(subtitlesdelay(delaysubdeath[mainroadstep], line, mainroadstep));
+        }
+        else { //StartCoroutine(subtitlesdelay(delaysubsecond[mainroadstep], line, mainroadstep)); 
+        }
+
+
+       
 
         if (mainroadstep == itsaveroad[0]) { mainroadstep++; canvasbt.SetActive(false); player.Play(); }
         else
@@ -106,15 +130,7 @@ public class MainRoadFunk : MonoBehaviour
         }
 
     }
-    IEnumerator videoplayback1()
-    {
-        yield return new WaitForSeconds(1);
-        yield return new WaitUntil(() => player.isPlaying == false);
-
-        
-        lastmap();  //atomatish send you back 
-        //canvasBTback.SetActive(true); canvasbt.SetActive(false);//with button send you back
-    }
+   
 
 
     IEnumerator videoplayback()
@@ -145,7 +161,7 @@ public class MainRoadFunk : MonoBehaviour
         StartCoroutine(aftervideoplayit());
 
     }
-    IEnumerator aftervideoplayit( )
+   private IEnumerator aftervideoplayit( )
     {
 
 
@@ -157,6 +173,15 @@ public class MainRoadFunk : MonoBehaviour
         player.clip = videobetween[videonext];
         canvasbt.SetActive(false);
         
+    }
+   private IEnumerator subtitlesdelay(int delay,string road,int index)
+    {
+        subtitlesComponent.SetTextOf();
+      
+        yield return new WaitForSeconds(delay);
+
+        subtitlesComponent.StartSubtitles(road, index);
+
     }
 
 

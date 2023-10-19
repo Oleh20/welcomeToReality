@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -62,16 +63,22 @@ public class StartVideoContr : MonoBehaviour
     public void startend ()
     
     {
-       
 
+        
         player.GetComponent<MainRoadFunk>().playstart();
     
     }
     IEnumerator delay()
     {
         yield return new WaitForSeconds(1);
+
+        yield return new WaitForSeconds(8);
+
+        subtitlesComponent.StartSubtitles("intro", 3);
+
         yield return new WaitUntil(() => player.isPlaying == false);
         startend();
+       
     }
 
 
