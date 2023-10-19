@@ -9,6 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Studio logo.unity
+    guid: e721b2c4bf27b4e479267a6f33465b10
+  - enabled: 1
+    path: Assets/Scenes/Game logo.unity
+    guid: 716666ea623fd89429e733c757035796
+  - enabled: 1
+    path: Assets/Scenes/Language selection.unity
+    guid: 3f0e8be6d2e65c34b840e4bbd85dc256
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 81e02769d34d46846b81d86bf55c8229
+  - enabled: 1
+    path: Assets/Scenes/About the game.unity
+    guid: d7482b3bcecf5e34b9a214a7f64f9e68
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 7ad685c808587334f83f96477a29e9c8
+  - enabled: 0
     path: Assets/sasha_folder/sashaMain.unity
     guid: 8139b4af79b693e4bbd7508bc4c1ffee
   m_configObjects:
