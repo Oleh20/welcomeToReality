@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/AddressableAssetsData/link.xml.meta
+guid: 9d2b1b7d8fe376b40a85065f0cce29b9
+TextScriptImporter:
+========
 guid: d7482b3bcecf5e34b9a214a7f64f9e68
 DefaultImporter:
+>>>>>>>> origin/main:Assets/Scenes/About the game.unity.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
