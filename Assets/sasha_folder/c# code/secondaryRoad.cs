@@ -29,7 +29,7 @@ public class secondaryRoad : MonoBehaviour
         
      
 
-        GetComponent<MainRoadFunk>().GoBack();
+        GetComponent<MainRoadFunk>().GoBack("second");
 
     }
     public void endofgame()

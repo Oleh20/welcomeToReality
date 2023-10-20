@@ -882,13 +882,14 @@ GameObject:
   - component: {fileID: 335818094}
   - component: {fileID: 335818097}
   - component: {fileID: 335818096}
+  - component: {fileID: 335818098}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &335818094
 RectTransform:
   m_ObjectHideFlags: 0
@@ -903,10 +904,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1493434967}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.083000004, y: 0}
-  m_AnchorMax: {x: 0.91360426, y: 0.23700002}
-  m_AnchoredPosition: {x: -0.34960938, y: 2.6142578}
-  m_SizeDelta: {x: 0.9162998, y: 4.628502}
+  m_AnchorMin: {x: 0.078875005, y: 0}
+  m_AnchorMax: {x: 0.91360426, y: 0.27670372}
+  m_AnchoredPosition: {x: 0.36621094, y: -0.0029296875}
+  m_SizeDelta: {x: -0.5156002, y: -0.6058006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &335818096
 MonoBehaviour:
@@ -921,15 +922,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: -0.23, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -0.48, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
+    m_Font: {fileID: 12800000, guid: 5dd49b3eacc540408c98eee0de38e0f1, type: 3}
     m_FontSize: 44
     m_FontStyle: 0
     m_BestFit: 0
@@ -950,6 +951,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335818093}
   m_CullTransparentMesh: 1
+--- !u!114 &335818098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335818093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ab849c1b2b16c489c7d972e2be8436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subtitleText: {fileID: 335818096}
+  letterDelay: 0.1
+  disableDelay: 1
+  currentSubtitle: 
+  mainSubtitle:
+  - main0
+  - main1
+  - main2
+  - main3
+  - main4
+  - main5
+  - main6
+  secondarySubtitle:
+  - second0
+  deathSubtitle:
+  - death0
+  introSubtitle:
+  - start intro
+  - start intro1
+  - start intro2
+  - start intro3
+  currentIndex: 0
+  textBlock: {fileID: 335818093}
 --- !u!1 &428784304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,7 +1093,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 4a448907532e7754a8d4494cdec3a578, type: 3}
   - {fileID: 32900000, guid: 2caa3ffb6110f724eb4498599a98a499, type: 3}
   - {fileID: 32900000, guid: 07e0c0f8650752247bfcb565a19b1ac9, type: 3}
-  - {fileID: 32900000, guid: 09c4e5daac2a6124eaf6fc6d426c70c7, type: 3}
+  - {fileID: 32900000, guid: 12a423aeaa28ddd4d9c8aa3dab18cd15, type: 3}
   - {fileID: 32900000, guid: 07d57f254e999da4aad818480a3c8b38, type: 3}
 --- !u!114 &428784309
 MonoBehaviour:
@@ -1071,6 +1107,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023f5762018ef2c428d1f820d7437aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  subtitlesComponent: {fileID: 335818098}
+  delaysub: 310000000a000000060000000f0000000700000007000000
+  delaysubdeath: 05000000
+  delaysubsecond: 05000000
   canvasBTback: {fileID: 1947615753}
   canvasbt: {fileID: 1886952100}
   player: {fileID: 428784305}
@@ -1128,6 +1168,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 08534928ee6b01c45b8e834aa25eab50, type: 3}
   btcanvas: {fileID: 1886952100}
   startvideo: {fileID: 32900000, guid: 2f663c4a42197df41a46678ea25dfcc4, type: 3}
+  subtitlesComponent: {fileID: 335818098}
 --- !u!1 &433337845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1812,6 +1853,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1304518970}
         m_TargetAssemblyTypeName: destroi, Assembly-CSharp
         m_MethodName: ddddddddddd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 335818096}
+        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+        m_MethodName: StopAllCoroutines
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

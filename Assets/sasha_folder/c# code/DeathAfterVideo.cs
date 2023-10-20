@@ -33,7 +33,7 @@ public class DeathAfterVideo : MonoBehaviour
 
        
        
-            GetComponent<MainRoadFunk>().GoBack();
+            GetComponent<MainRoadFunk>().GoBack("death");
        
        
 
