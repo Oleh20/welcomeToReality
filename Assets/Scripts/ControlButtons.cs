@@ -46,21 +46,20 @@ public class ControlButtons : MonoBehaviour
         }
     }
 
-
-        public void PauseTheGame()
-        {
-            Time.timeScale = 0;
-            pauseCanvas.SetActive(true);
-            videoPlayer.Pause();
+    public void PauseTheGame()
+    {
+        Time.timeScale = 0;
+        pauseCanvas.SetActive(true);
+        videoPlayer.Pause();
     }
 
-        public void ResumeGame()
-        {
-            Time.timeScale = 1;
-            pauseCanvas.SetActive(false);
-            videoPlayer.Play();
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+        pauseCanvas.SetActive(false);
+        videoPlayer.Play();
 
 
     }
-    }
+}
 
