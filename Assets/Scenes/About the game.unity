@@ -274,7 +274,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:10d0927cb0995e54d87c32aae5886bf7
     m_TableEntryReference:
-      m_KeyId: 2279054063652864
+      m_KeyId: 3337075615289344
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -352,7 +352,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:10d0927cb0995e54d87c32aae5886bf7
     m_TableEntryReference:
-      m_KeyId: 2280218540855296
+      m_KeyId: 3336135847923712
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.35
+  m_fontSize: 43
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -468,7 +468,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 2.3209229}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -737,8 +737,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.020875, y: 0.78833336}
   m_AnchorMax: {x: 0.48278126, y: 0.96700007}
-  m_AnchoredPosition: {x: -1.4101562, y: 2.41333}
-  m_SizeDelta: {x: 8.7411, y: 7.9431}
+  m_AnchoredPosition: {x: -1.4101562, y: -14.215332}
+  m_SizeDelta: {x: 8.7411, y: 41.2002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1514055184
 MonoBehaviour:
@@ -756,7 +756,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:10d0927cb0995e54d87c32aae5886bf7
     m_TableEntryReference:
-      m_KeyId: 2280046272401408
+      m_KeyId: 3335755151921152
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -838,7 +838,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.05
+  m_fontSize: 43.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -874,7 +874,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: -2.3209229}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1147,7 +1147,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:10d0927cb0995e54d87c32aae5886bf7
     m_TableEntryReference:
-      m_KeyId: 2272181587496960
+      m_KeyId: 3337434995838976
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

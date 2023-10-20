@@ -174,19 +174,76 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3036922062520320
-    m_Localized: Sanya Can you tell me what time it is?
+    m_Localized: Can you tell me what time it is?
     m_Metadata:
       m_Items: []
   - m_Id: 3045866331914240
-    m_Localized: 22222222222
+    m_Localized: how did you get here?
     m_Metadata:
       m_Items: []
   - m_Id: 3045853216325632
-    m_Localized: 11111111111111
+    m_Localized: Shall we walk?
     m_Metadata:
       m_Items: []
   - m_Id: 3277510024314880
     m_Localized: you are dumb ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3335004736409600
+    m_Localized: About the game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3335755151921152
+    m_Localized: 'The game is being developed by:
+
+      The author of the idea,
+      editor and operator - Oleg Pagulych
+
+      Actors - Oleksandr Dovhiy and Oleksandr
+      Klymenko
+
+      Programmers - Ruslan Pagulych and Oleksandr Klymenko
+
+      Localization
+      editor and tester - Karyna Medvedieva'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3336135847923712
+    m_Localized: 'You can support us to create new products
+
+      4441 1144 5336
+      2947
+
+      and in return we will write your name here forever.
+
+      Don''t
+      forget to subscribe)
+
+      Patrons:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3337075615289344
+    m_Localized: Est 10.2023
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3337434995838976
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3048027879063552
+    m_Localized: how is the weather?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3048043276353536
+    m_Localized: Did we come here to save the world?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3048081624875008
+    m_Localized: Did you bring the documents?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3048299766431744
+    m_Localized: let's change?
     m_Metadata:
       m_Items: []
   references:
