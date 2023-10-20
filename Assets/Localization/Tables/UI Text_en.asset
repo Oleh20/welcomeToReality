@@ -185,6 +185,10 @@ MonoBehaviour:
     m_Localized: 11111111111111
     m_Metadata:
       m_Items: []
+  - m_Id: 3277510024314880
+    m_Localized: you are dumb ?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

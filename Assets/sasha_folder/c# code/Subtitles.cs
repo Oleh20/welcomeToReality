@@ -52,7 +52,7 @@ public class Subtitles : MonoBehaviour
     }
     private IEnumerator ShowSubtitle()
     {
-        
+        SetTextOf ();
         textBlock.SetActive(true);
         currentIndex = 0;
         while (currentIndex < currentSubtitle.Length)

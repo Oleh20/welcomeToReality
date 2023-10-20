@@ -43,9 +43,10 @@ public class MainRoadFunk : MonoBehaviour
         endofgame.SetActive(false);
         Videos = GetComponent<AllVideos>().VideoClipListMain;
 
-  
+        player.started += subtitelsof;
 
     }
+    void subtitelsof(VideoPlayer vp) { subtitlesComponent.SetTextOf(); UnityEngine.Debug.Log("start"); }
     public void playstart()
     {
 
@@ -101,7 +102,7 @@ public class MainRoadFunk : MonoBehaviour
 
        
 
-        if (mainroadstep == itsaveroad[0]) { mainroadstep++; canvasbt.SetActive(false); player.Play(); }
+        if (mainroadstep == itsaveroad[0]) { mainroadstep++; canvasbt.SetActive(false); player.Play(); StartCoroutine(subtitlesdelay(delaysub[mainroadstep], "main", mainroadstep)); }
         else
         {
 
