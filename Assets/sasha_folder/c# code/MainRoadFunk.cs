@@ -72,23 +72,10 @@ public class MainRoadFunk : MonoBehaviour
         }
       
         player.Play();
-
-        
-
-        
-
-
-
         StartCoroutine(subtitlesdelay(delaysub[mainroadstep], "main", mainroadstep));
-
-    
-
        canvasbt.SetActive(false);
 
-        
-     
-        
-    
+
     }
   
     public void GoBack(string line)
@@ -116,7 +103,7 @@ public class MainRoadFunk : MonoBehaviour
         
         {
             canvasBTback.SetActive(false);
-           canvasbt.SetActive(false);
+          
             endofgame.SetActive(true);
             player.Pause();
 

@@ -50,7 +50,7 @@ public class randomRoadC : MonoBehaviour
                 allBT[2].GetComponent<forButton>().c = true;
                 break;
                 case 1:
-                resetbt();
+                  resetbt();
 
 
                 allBT[1].GetComponent<forButton>().a = true;
@@ -102,7 +102,7 @@ public class randomRoadC : MonoBehaviour
       bool a =  player.GetComponent<MainRoadFunk>().itWasStarted;
         if (a)
         {
-            if (player.GetComponent<MainRoadFunk>().mainroadstep >= 6) { }
+            if (player.GetComponent<MainRoadFunk>().mainroadstep >= 6) { gameObject.SetActive(false); }
             else
             {
                 RandomButton();
