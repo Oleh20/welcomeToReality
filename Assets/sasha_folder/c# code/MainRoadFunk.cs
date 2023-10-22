@@ -23,6 +23,8 @@ public class MainRoadFunk : MonoBehaviour
     public VideoPlayer player;
 
     private VideoClip[] Videos;
+    [SerializeField]
+    private VideoClip startVideo;
 
 
     public int[] itsaveroad;
@@ -62,7 +64,7 @@ public class MainRoadFunk : MonoBehaviour
     {// play main story line 
 
 
-        if (mainroadstep == -1) { mainroadstep = 0; player.clip = Videos[mainroadstep]; }
+        if (mainroadstep == -1) { mainroadstep = 0; player.clip = startVideo; }
         else
         {
             
