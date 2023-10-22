@@ -35,7 +35,7 @@ public class randomRoadC : MonoBehaviour
     void RandomButton()
     {
 
-        bool mybool = allBT[0].GetComponent<forButton>().a;
+        bool mybool = allBT[0].GetComponent<forButton>().mainroad;
 
         int a = Random.Range(0, 3);
         switch (a)
@@ -45,26 +45,26 @@ public class randomRoadC : MonoBehaviour
                 resetbt();
 
 
-                allBT[0].GetComponent<forButton>().a = true;
-                allBT[1].GetComponent<forButton>().b = true;
-                allBT[2].GetComponent<forButton>().c = true;
+                allBT[0].GetComponent<forButton>().mainroad = true;
+                allBT[1].GetComponent<forButton>().secondroad = true;
+                allBT[2].GetComponent<forButton>().deathroad = true;
                 break;
                 case 1:
                   resetbt();
 
 
-                allBT[1].GetComponent<forButton>().a = true;
-                allBT[0].GetComponent<forButton>().b = true;
-                allBT[2].GetComponent<forButton>().c= true;
+                allBT[1].GetComponent<forButton>().mainroad = true;
+                allBT[0].GetComponent<forButton>().secondroad = true;
+                allBT[2].GetComponent<forButton>().deathroad= true;
 
                 break;
                 case 2:
 
                 resetbt();
 
-                allBT[2].GetComponent<forButton>().a = true;
-                allBT[1].GetComponent<forButton>().b = true;
-                allBT[0].GetComponent<forButton>().c = true;
+                allBT[2].GetComponent<forButton>().mainroad = true;
+                allBT[1].GetComponent<forButton>().secondroad = true;
+                allBT[0].GetComponent<forButton>().deathroad = true;
 
 
                 break; 
@@ -80,9 +80,9 @@ public class randomRoadC : MonoBehaviour
     {
         for (int i = 0; allBT.Length > i; i++)
         {
-            allBT[i].GetComponent<forButton>().a = false;
-            allBT[i].GetComponent<forButton>().b = false;
-            allBT[i].GetComponent<forButton>().c = false;
+            allBT[i].GetComponent<forButton>().mainroad = false;
+            allBT[i].GetComponent<forButton>().secondroad = false;
+            allBT[i].GetComponent<forButton>().deathroad = false;
         }
     }
     

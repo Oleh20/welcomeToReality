@@ -436,9 +436,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rendervideocontroller: {fileID: 428784304}
   canvas: {fileID: 1886952100}
-  a: 0
-  b: 0
-  c: 0
+  mainroad: 0
+  secondroad: 0
+  deathroad: 0
   mainRoadTextLocalizationKey: MainRoadText
   roadChoice: 000000
 --- !u!1 &152504418
@@ -1671,9 +1671,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rendervideocontroller: {fileID: 428784304}
   canvas: {fileID: 1886952100}
-  a: 0
-  b: 0
-  c: 0
+  mainroad: 0
+  secondroad: 0
+  deathroad: 0
   mainRoadTextLocalizationKey: MainRoadText
   roadChoice: 000000
 --- !u!1 &564241181
@@ -3859,9 +3859,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rendervideocontroller: {fileID: 428784304}
   canvas: {fileID: 1886952100}
-  a: 0
-  b: 0
-  c: 0
+  mainroad: 0
+  secondroad: 0
+  deathroad: 0
   mainRoadTextLocalizationKey: MainRoadText
   roadChoice: 000000
 --- !u!1 &1886952100
@@ -5367,7 +5367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2130733932

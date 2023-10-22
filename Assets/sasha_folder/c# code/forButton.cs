@@ -24,9 +24,9 @@ public class forButton : MonoBehaviour
     int nummeroftext;
 
 
-    public bool a = false;
-    public bool b = false;
-    public bool c = false;
+    public bool mainroad = false;
+    public bool secondroad = false;
+    public bool deathroad = false;
 
  
 
@@ -61,7 +61,7 @@ public class forButton : MonoBehaviour
        
         MadeCurenttRoad();
 
-        texttransleter();
+        TextTransleter();
         SetTextForRoad();
 
 
@@ -82,19 +82,19 @@ public class forButton : MonoBehaviour
 
 
 
-        if (a) //0
+        if (mainroad) //0
         {
 
 
             button.onClick.AddListener(rendervideocontroller.GetComponent<MainRoadFunk>().MainRoad);
 
         }
-       if (b)// 1
+       if (secondroad)// 1
         {
             button.onClick.AddListener(rendervideocontroller.GetComponent<secondaryRoad>().OtherWay);
 
         }
-       if  (c) 
+       if  (deathroad) 
         {
             button.onClick.AddListener(rendervideocontroller.GetComponent<DeathAfterVideo>().PlayONLYoneTimeandDeath);
 
@@ -122,7 +122,7 @@ public class forButton : MonoBehaviour
    /// </summary> text cod ruslan you can make it all delit
    /// 
 
-    void texttransleter()
+    void TextTransleter()
     {
 
         for (int i = 0; i < 10; i++)
@@ -169,9 +169,9 @@ public class forButton : MonoBehaviour
     }
      string[] whatfortextyouneed()
     {
-        if (a) { ShouText = mainroadtext; }
-        if (b) { ShouText = secondtext; }
-        if (c) { ShouText = Deathtext; }
+        if (mainroad) { ShouText = mainroadtext; }
+        if (secondroad) { ShouText = secondtext; }
+        if (deathroad) { ShouText = Deathtext; }
 
      
 

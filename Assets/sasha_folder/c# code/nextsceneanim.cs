@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class nextsceneanim : MonoBehaviour
+public class NextSceneAnim : MonoBehaviour
 {
-    public void endofgame()
+    public void EndOfGame()
     {
        
             SceneManager.LoadScene("Mini game");
