@@ -31,9 +31,8 @@ public class MainRoadFunk : MonoBehaviour
     public int mainroadstep;
 
     
-    private int videonext = 0;
-    public VideoClip[] videobetween;
-    public int[] playbetween;
+
+   
 
     public GameObject endofgame;
 
@@ -82,25 +81,19 @@ public class MainRoadFunk : MonoBehaviour
 
         StartCoroutine(subtitlesdelay(delaysub[mainroadstep], "main", mainroadstep));
 
-        if (mainroadstep == -1) { mainroadstep = 0; }
+    
+
        canvasbt.SetActive(false);
 
         
-        AreYouNeedPlayBetween();
+     
         
     
     }
   
     public void GoBack(string line)
     {
-        if (line == "death")
-        {
-
-           // StartCoroutine(subtitlesdelay(delaysubdeath[mainroadstep], line, mainroadstep));
-        }
-        else { //StartCoroutine(subtitlesdelay(delaysubsecond[mainroadstep], line, mainroadstep)); 
-        }
-
+        
 
        
 
@@ -123,7 +116,7 @@ public class MainRoadFunk : MonoBehaviour
         
         {
             canvasBTback.SetActive(false);
-            canvasbt.SetActive(false);
+           canvasbt.SetActive(false);
             endofgame.SetActive(true);
             player.Pause();
 
@@ -144,39 +137,10 @@ public class MainRoadFunk : MonoBehaviour
         MainRoad();  //atomatish send you back 
         //canvasBTback.SetActive(true); canvasbt.SetActive(false);//with button send you back
     }
-    void AreYouNeedPlayBetween()
-    {
-        for (int i = 0; i < playbetween.Length; i++)
-        {
+    
 
-            if (playbetween[i] == mainroadstep)
-            {
-                PlayBetween();
-                videonext = i;
-            }
+ 
 
-        }
-
-    }
-
-    public void PlayBetween()
-    {
-        StartCoroutine(aftervideoplayit());
-
-    }
-   private IEnumerator aftervideoplayit( )
-    {
-
-
-        yield return new WaitForSeconds(1);
-        yield return new WaitUntil(() => player.isPlaying == false);
-
-   
-        
-        player.clip = videobetween[videonext];
-        canvasbt.SetActive(false);
-        
-    }
    private IEnumerator subtitlesdelay(int delay,string road,int index)
     {
         subtitlesComponent.SetTextOf();
