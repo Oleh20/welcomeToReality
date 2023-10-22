@@ -33,6 +33,7 @@ public class Subtitles : MonoBehaviour
     }
     public void UploadDataOnContinue()
     {
+      
         StopAllCoroutines();
         StartCoroutine(ShowSubtitle());
     }
@@ -75,6 +76,7 @@ public class Subtitles : MonoBehaviour
     }
     private IEnumerator ShowSubtitle()
     {
+        SetTextOf();
         yield return new WaitForSeconds(0.3f);
         CheckOnSaved();
         textBlock.SetActive(true);

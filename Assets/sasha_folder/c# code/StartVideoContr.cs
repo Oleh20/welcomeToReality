@@ -70,7 +70,7 @@ public class StartVideoContr : MonoBehaviour
     }
     IEnumerator delay()
     {
-        yield return new WaitForSeconds(1);
+        
 
         yield return new WaitForSeconds(8);
 

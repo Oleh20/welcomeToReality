@@ -11,6 +11,9 @@ public class forButton : MonoBehaviour
 {
     public GameObject rendervideocontroller;
 
+    [SerializeField]
+    private GameObject canvas;
+
     private string[] mainroadtext;
     private string[] secondtext;
     private string[] Deathtext;
@@ -21,19 +24,21 @@ public class forButton : MonoBehaviour
     int nummeroftext;
 
 
+    public bool a = false;
+    public bool b = false;
+    public bool c = false;
 
-
-    public bool bottunMainRoad ;
-
-    public bool secondaryRoad ;
-
-    public bool DeathRoad ;
+ 
 
    
 
     private Button button;
 
     public string mainRoadTextLocalizationKey ;
+
+    public bool[] roadChoice = new bool[3];
+
+    static string[] whichroad;
   
 
 
@@ -53,6 +58,7 @@ public class forButton : MonoBehaviour
 
 
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
+       
         MadeCurenttRoad();
 
         texttransleter();
@@ -68,21 +74,27 @@ public class forButton : MonoBehaviour
     
     public void MadeCurenttRoad()
     {
+        
+
         deleteLastRoad();
+
       
-        if (bottunMainRoad)
+
+
+
+        if (a) //0
         {
 
 
             button.onClick.AddListener(rendervideocontroller.GetComponent<MainRoadFunk>().MainRoad);
 
         }
-        if (secondaryRoad)
+       if (b)// 1
         {
             button.onClick.AddListener(rendervideocontroller.GetComponent<secondaryRoad>().OtherWay);
 
         }
-        if (DeathRoad)
+       if  (c) 
         {
             button.onClick.AddListener(rendervideocontroller.GetComponent<DeathAfterVideo>().PlayONLYoneTimeandDeath);
 
@@ -94,6 +106,17 @@ public class forButton : MonoBehaviour
     button.onClick.RemoveAllListeners();
     
     }
+
+  
+
+
+
+
+
+
+
+
+
    /// <summary>
    /// //////////////////////////////////////////////////////////////////////////
    /// </summary> text cod ruslan you can make it all delit
@@ -132,6 +155,7 @@ public class forButton : MonoBehaviour
     }
      public void SetTextForRoad()
     {
+        MadeCurenttRoad();
         nummeroftext = rendervideocontroller.GetComponent<MainRoadFunk>().mainroadstep;
         ShouText = whatfortextyouneed();
 
@@ -145,9 +169,9 @@ public class forButton : MonoBehaviour
     }
      string[] whatfortextyouneed()
     {
-        if (bottunMainRoad) { ShouText = mainroadtext; }
-        if (secondaryRoad) { ShouText = secondtext; }
-        if (DeathRoad) { ShouText = Deathtext; }
+        if (a) { ShouText = mainroadtext; }
+        if (b) { ShouText = secondtext; }
+        if (c) { ShouText = Deathtext; }
 
      
 

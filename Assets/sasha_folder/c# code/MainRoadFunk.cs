@@ -46,7 +46,7 @@ public class MainRoadFunk : MonoBehaviour
         player.started += subtitelsof;
 
     }
-    void subtitelsof(VideoPlayer vp) { subtitlesComponent.SetTextOf(); UnityEngine.Debug.Log("start"); }
+    void subtitelsof(VideoPlayer vp) { subtitlesComponent.SetTextOf();     }
     public void playstart()
     {
 
