@@ -23,15 +23,16 @@ public class MainRoadFunk : MonoBehaviour
     public VideoPlayer player;
 
     private VideoClip[] Videos;
+    [SerializeField]
+    private VideoClip startVideo;
 
 
     public int[] itsaveroad;
     public int mainroadstep;
 
     
-    private int videonext = 0;
-    public VideoClip[] videobetween;
-    public int[] playbetween;
+
+   
 
     public GameObject endofgame;
 
@@ -46,7 +47,7 @@ public class MainRoadFunk : MonoBehaviour
         player.started += subtitelsof;
 
     }
-    void subtitelsof(VideoPlayer vp) { subtitlesComponent.SetTextOf(); UnityEngine.Debug.Log("start"); }
+    void subtitelsof(VideoPlayer vp) { subtitlesComponent.SetTextOf();     }
     public void playstart()
     {
 
@@ -62,7 +63,7 @@ public class MainRoadFunk : MonoBehaviour
     {// play main story line 
 
 
-        if (mainroadstep == -1) { mainroadstep = 0; player.clip = Videos[mainroadstep]; }
+        if (mainroadstep == -1) { mainroadstep = 0; player.clip = startVideo; }
         else
         {
             
@@ -71,34 +72,15 @@ public class MainRoadFunk : MonoBehaviour
         }
       
         player.Play();
-
-        
-
-        
-
-
-
         StartCoroutine(subtitlesdelay(delaysub[mainroadstep], "main", mainroadstep));
-
-        if (mainroadstep == -1) { mainroadstep = 0; }
        canvasbt.SetActive(false);
 
-        
-        AreYouNeedPlayBetween();
-        
-    
+
     }
   
     public void GoBack(string line)
     {
-        if (line == "death")
-        {
-
-           // StartCoroutine(subtitlesdelay(delaysubdeath[mainroadstep], line, mainroadstep));
-        }
-        else { //StartCoroutine(subtitlesdelay(delaysubsecond[mainroadstep], line, mainroadstep)); 
-        }
-
+        
 
        
 
@@ -121,7 +103,7 @@ public class MainRoadFunk : MonoBehaviour
         
         {
             canvasBTback.SetActive(false);
-            canvasbt.SetActive(false);
+          
             endofgame.SetActive(true);
             player.Pause();
 
@@ -142,39 +124,10 @@ public class MainRoadFunk : MonoBehaviour
         MainRoad();  //atomatish send you back 
         //canvasBTback.SetActive(true); canvasbt.SetActive(false);//with button send you back
     }
-    void AreYouNeedPlayBetween()
-    {
-        for (int i = 0; i < playbetween.Length; i++)
-        {
+    
 
-            if (playbetween[i] == mainroadstep)
-            {
-                PlayBetween();
-                videonext = i;
-            }
+ 
 
-        }
-
-    }
-
-    public void PlayBetween()
-    {
-        StartCoroutine(aftervideoplayit());
-
-    }
-   private IEnumerator aftervideoplayit( )
-    {
-
-
-        yield return new WaitForSeconds(1);
-        yield return new WaitUntil(() => player.isPlaying == false);
-
-   
-        
-        player.clip = videobetween[videonext];
-        canvasbt.SetActive(false);
-        
-    }
    private IEnumerator subtitlesdelay(int delay,string road,int index)
     {
         subtitlesComponent.SetTextOf();

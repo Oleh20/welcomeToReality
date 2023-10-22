@@ -44,7 +44,7 @@ public class timer10 : MonoBehaviour
 
 
         player.GetComponent<DeathAfterVideo>().PlayONLYoneTimeandDeath();
-      //  CountdownCompleted?.Invoke();
+    
        
     }
     public void maketimeractiv()

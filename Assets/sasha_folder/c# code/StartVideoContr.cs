@@ -33,13 +33,13 @@ public class StartVideoContr : MonoBehaviour
     }
     void showBT (VideoPlayer vp)
     {
-        player.GetComponent<MainRoadFunk>().lastmap();
 
         if (canvas != null) { canvas.gameObject.SetActive(true); }
 
-        
-            
-        
+
+
+        player.GetComponent<MainRoadFunk>().lastmap();
+
     }
     
    public void roadone()
@@ -70,7 +70,7 @@ public class StartVideoContr : MonoBehaviour
     }
     IEnumerator delay()
     {
-        yield return new WaitForSeconds(1);
+        
 
         yield return new WaitForSeconds(8);
 
