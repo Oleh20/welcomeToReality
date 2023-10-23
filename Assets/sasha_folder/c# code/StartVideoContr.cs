@@ -76,10 +76,16 @@ public class StartVideoContr : MonoBehaviour
 
         subtitlesComponent.StartSubtitles("intro", 3);
 
-        yield return new WaitUntil(() => player.isPlaying == false);
-        startend();
+        DelayOhneCarutina();
        
     }
+    private void DelayOhneCarutina()
+    {
+        player.GetComponent<VideoPlayer>().loopPointReached += PlayAfrikaVideo;
+    }
+    void PlayAfrikaVideo(VideoPlayer vp) { if (!player.GetComponent<MainRoadFunk>().itWasStarted) { startend(); } }
+   
+    
 
 
 

@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -39,12 +40,15 @@ public class MainRoadFunk : MonoBehaviour
    
 
     public bool itWasStarted = false;
+    
+   
     private void Start()
     {
         endofgame.SetActive(false);
         Videos = GetComponent<AllVideos>().VideoClipListMain;
 
         player.started += subtitelsof;
+        
 
     }
     void subtitelsof(VideoPlayer vp) { subtitlesComponent.SetTextOf();     }
@@ -61,8 +65,8 @@ public class MainRoadFunk : MonoBehaviour
 
     public void MainRoad()
     {// play main story line 
-
-
+        
+        
         if (mainroadstep == -1) { mainroadstep = 0; player.clip = startVideo; }
         else
         {
@@ -75,9 +79,10 @@ public class MainRoadFunk : MonoBehaviour
         StartCoroutine(subtitlesdelay(delaysub[mainroadstep], "main", mainroadstep));
        canvasbt.SetActive(false);
 
-
+       
     }
-  
+    
+    
     public void GoBack(string line)
     {
         

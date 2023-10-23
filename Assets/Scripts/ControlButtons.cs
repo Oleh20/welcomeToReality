@@ -57,9 +57,11 @@ public class ControlButtons : MonoBehaviour
     {
         Time.timeScale = 1;
         pauseCanvas.SetActive(false);
-        videoPlayer.Play();
 
+        if (!videoPlayer.isPlaying) { videoPlayer.Play(); }
+     
 
+      
     }
 }
 //

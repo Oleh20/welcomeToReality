@@ -57,7 +57,7 @@ public class forButton : MonoBehaviour
        button = GetComponent<Button>();
 
 
-        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
+       // LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
        
         MadeCurenttRoad();
 
