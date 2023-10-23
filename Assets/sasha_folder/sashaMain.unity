@@ -1264,7 +1264,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: b8852b43ed766c44c9c6e9481be2f890, type: 3}
   - {fileID: 32900000, guid: 2caa3ffb6110f724eb4498599a98a499, type: 3}
   - {fileID: 32900000, guid: e9e29d3754d5b1e469d02f45ed4afab2, type: 3}
-  - {fileID: 32900000, guid: 09c4e5daac2a6124eaf6fc6d426c70c7, type: 3}
+  - {fileID: 32900000, guid: c7a1528577cd4cb46819b32b6b410e51, type: 3}
   - {fileID: 32900000, guid: 560aa14fa8860a14a993c16fc9694212, type: 3}
   VideoClipListDeath:
   - {fileID: 32900000, guid: c5c350afb53a18e4980ab2a3c39216e9, type: 3}
@@ -1272,7 +1272,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 4a448907532e7754a8d4494cdec3a578, type: 3}
   - {fileID: 32900000, guid: 2caa3ffb6110f724eb4498599a98a499, type: 3}
   - {fileID: 32900000, guid: 07e0c0f8650752247bfcb565a19b1ac9, type: 3}
-  - {fileID: 32900000, guid: 12a423aeaa28ddd4d9c8aa3dab18cd15, type: 3}
+  - {fileID: 32900000, guid: 98e0f026d8169b240be24c77baf8d019, type: 3}
   - {fileID: 32900000, guid: 07d57f254e999da4aad818480a3c8b38, type: 3}
 --- !u!114 &428784309
 MonoBehaviour:
@@ -1382,8 +1382,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -2.4091034, y: -4.0151978}
+  m_SizeDelta: {x: -24.091, y: -8.0303}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &433337847
 MonoBehaviour:
@@ -1401,7 +1401,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:10d0927cb0995e54d87c32aae5886bf7
     m_TableEntryReference:
-      m_KeyId: 1824469978923008
+      m_KeyId: 2657396883144704
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 1
@@ -1452,13 +1452,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 55
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u043D\u0435"
+  m_Text: "\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u0432\u0444\u044B\u0432"
 --- !u!222 &433337849
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2007,7 +2007,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &738589931
 RectTransform:
@@ -4208,7 +4208,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!1 &1947615753
 GameObject:
@@ -4426,10 +4426,10 @@ RectTransform:
   - {fileID: 433337846}
   m_Father: {fileID: 738589931}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.28052083, y: 0.3295926}
-  m_AnchorMax: {x: 0.3564792, y: 0.39362967}
-  m_AnchoredPosition: {x: -0.5, y: -0.5}
-  m_SizeDelta: {x: 3, y: 1}
+  m_AnchorMin: {x: 0.1493125, y: 0.3295926}
+  m_AnchorMax: {x: 0.3564792, y: 0.5}
+  m_AnchoredPosition: {x: 0.5, y: -0.49996948}
+  m_SizeDelta: {x: 0.99997, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2063233496
 MonoBehaviour:
@@ -4613,9 +4613,9 @@ RectTransform:
   m_Father: {fileID: 738589931}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6424792, y: 0.3332963}
-  m_AnchorMax: {x: 0.72200006, y: 0.39362967}
-  m_AnchoredPosition: {x: -1, y: -2.5}
-  m_SizeDelta: {x: -2, y: 5}
+  m_AnchorMax: {x: 0.8475209, y: 0.5}
+  m_AnchoredPosition: {x: 0.00012207031, y: -2.5}
+  m_SizeDelta: {x: 0, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2113821064
 MonoBehaviour:
@@ -4798,8 +4798,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -4.0153, y: -6.4242}
+  m_SizeDelta: {x: -27.3032, y: -12.8486}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2124378232
 MonoBehaviour:
@@ -4817,7 +4817,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:10d0927cb0995e54d87c32aae5886bf7
     m_TableEntryReference:
-      m_KeyId: 1824373442822144
+      m_KeyId: 2657180855517184
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -4868,13 +4868,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 44
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0434\u0430"
+  m_Text: "\u044B\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B\u0432\u0444\u044B"
 --- !u!222 &2124378234
 CanvasRenderer:
   m_ObjectHideFlags: 0

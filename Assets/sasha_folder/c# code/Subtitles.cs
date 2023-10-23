@@ -33,8 +33,7 @@ public class Subtitles : MonoBehaviour
     }
     public void UploadDataOnContinue()
     {
-      
-        StopAllCoroutines();
+      StopAllCoroutines(); 
         StartCoroutine(ShowSubtitle());
     }
     private void CheckOnSaved()
