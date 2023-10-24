@@ -91,10 +91,6 @@ MonoBehaviour:
     m_Key: 3 Textdeath
     m_Metadata:
       m_Items: []
-  - m_Id: 2655291845853184
-    m_Key: 3 Textsecond
-    m_Metadata:
-      m_Items: []
   - m_Id: 2655349525921792
     m_Key: 4 Textmain
     m_Metadata:

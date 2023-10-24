@@ -40,7 +40,9 @@ public class MainRoadFunk : MonoBehaviour
    
 
     public bool itWasStarted = false;
-    
+
+
+    public bool MusikPlayLaut = false;
    
     private void Start()
     {
@@ -66,7 +68,7 @@ public class MainRoadFunk : MonoBehaviour
     public void MainRoad()
     {// play main story line 
         
-        
+       
         if (mainroadstep == -1) { mainroadstep = 0; player.clip = startVideo; }
         else
         {
@@ -85,14 +87,14 @@ public class MainRoadFunk : MonoBehaviour
     
     public void GoBack(string line)
     {
-        
 
-       
+
+        MusikPlayLaut = true;
 
         if (mainroadstep == itsaveroad[0]) { mainroadstep++; canvasbt.SetActive(false); player.Play(); StartCoroutine(subtitlesdelay(delaysub[mainroadstep], "main", mainroadstep)); }
         else
         {
-
+            
             mainroadstep--;
 
             canvasbt.SetActive(false);
@@ -125,7 +127,7 @@ public class MainRoadFunk : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         yield return new WaitUntil(() => player.isPlaying == false);
-        
+        MusikPlayLaut = false;
         MainRoad();  //atomatish send you back 
         //canvasBTback.SetActive(true); canvasbt.SetActive(false);//with button send you back
     }
