@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2555565930659840
-    m_Localized: and I passed by
+    m_Localized: But he passed by
     m_Metadata:
       m_Items: []
   - m_Id: 2559667616038912
@@ -51,11 +51,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2559671537713152
-    m_Localized: just like you
+    m_Localized: Just like you
     m_Metadata:
       m_Items: []
   - m_Id: 2561004328140800
-    m_Localized: It is difficult, I would rather be at home
+    m_Localized: Eh, boy, it's hard, I'd rather be at home
     m_Metadata:
       m_Items: []
   - m_Id: 2573656030920704
@@ -72,9 +72,9 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2585599911346176
     m_Localized: Well, in this game you will have to decide the fate of the whole
-      world and only you will decide the end of this game.You have the right to decide
-      what is good and what is bad, and remember that every choice you make has its
-      consequences. Are you ready to continue your journey?
+      world, and the end of this game will depend only on you. You have the right
+      to decide what is good and what is bad. Remember, every choice you make has
+      its consequences. Are you ready to continue your journey?
     m_Metadata:
       m_Items: []
   - m_Id: 2585601085751296
@@ -86,25 +86,26 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2654943487934464
-    m_Localized: it doesn't concern you
+    m_Localized: It doesn't concern you.
     m_Metadata:
       m_Items: []
   - m_Id: 2655059649183744
-    m_Localized: rubbish
+    m_Localized: But who communicates in the 21st century about the weather?
     m_Metadata:
       m_Items: []
   - m_Id: 2655200745570304
-    m_Localized: nicely
+    m_Localized: Nicely
     m_Metadata:
       m_Items: []
   - m_Id: 2655291845853184
-    m_Localized: '
-
-      it was better'
+    m_Localized: "\u041C\u043E\u0433\u043B\u043E \u0431\u0443\u0442\u0438 \u0456
+      \u043A\u0440\u0430\u0449\u0435, \u0430\u043B\u0435 \u043C\u0435\u043D\u0456
+      \u0446\u044F \u043F\u043E\u0433\u043E\u0434\u0430 \u0442\u0430\u043A\u043E\u0436
+      \u0434\u043E \u0432\u043F\u043E\u0434\u043E\u0431\u0438"
     m_Metadata:
       m_Items: []
   - m_Id: 2655349525921792
-    m_Localized: that's why I brought this diploma
+    m_Localized: That's why I brought this diploma
     m_Metadata:
       m_Items: []
   - m_Id: 2656429273989120
@@ -112,31 +113,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2656515039117312
-    m_Localized: nothing can be done
+    m_Localized: The world cannot be saved!
     m_Metadata:
       m_Items: []
   - m_Id: 2656600368037888
-    m_Localized: the same super duper secret documents?
+    m_Localized: The same super duper secret documents?
     m_Metadata:
       m_Items: []
   - m_Id: 2657082645889024
-    m_Localized: cookies in the diplomat
+    m_Localized: No, the diplomat has cookies
     m_Metadata:
       m_Items: []
   - m_Id: 2657396883144704
-    m_Localized: no, I changed my mind
+    m_Localized: No, I changed my mind
     m_Metadata:
       m_Items: []
   - m_Id: 2657280717701120
-    m_Localized: I trust you, let's just shake hands
+    m_Localized: I trust you, let's just switch hands
     m_Metadata:
       m_Items: []
   - m_Id: 2657180855517184
-    m_Localized: Let's go to 1,2 ... and stomping spaces
+    m_Localized: Yes, come on, throw the diplomat here
     m_Metadata:
       m_Items: []
   - m_Id: 2941097055567872
-    m_Localized: what are you need ?
+    m_Localized: What you want?
     m_Metadata:
       m_Items: []
   - m_Id: 2665560842391552
@@ -167,18 +168,18 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3034116001841152
-    m_Localized: The world is on the verge of great trouble, Africa has declared
-      war on the USA. Two agents will meet soon, their goal is to communicate with
-      each other and exchange secret documents that can stop this war, so it's all
-      in your hands
+    m_Localized: The world is on the brink of great trouble... Africa has declared
+      war on the US. Two agents are soon to meet, their goal is to negotiate with
+      each other and exchange secret documents that can stop this war. So everything
+      is in your hands!
     m_Metadata:
       m_Items: []
   - m_Id: 3036922062520320
-    m_Localized: Can you tell me what time it is?
+    m_Localized: Won't you tell me what time it is?
     m_Metadata:
       m_Items: []
   - m_Id: 3045866331914240
-    m_Localized: how did you get here?
+    m_Localized: How did you get here?
     m_Metadata:
       m_Items: []
   - m_Id: 3045853216325632
@@ -186,7 +187,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3277510024314880
-    m_Localized: you are dumb ?
+    m_Localized: Are you even in your right mind?
     m_Metadata:
       m_Items: []
   - m_Id: 3335004736409600
@@ -231,7 +232,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3048027879063552
-    m_Localized: how is the weather?
+    m_Localized: How do you like the weather today?
     m_Metadata:
       m_Items: []
   - m_Id: 3048043276353536
@@ -243,7 +244,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3048299766431744
-    m_Localized: let's change?
+    m_Localized: Let's switch?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4784820838420480
+    m_Localized: Here you can leave a review about our game.
     m_Metadata:
       m_Items: []
   references:

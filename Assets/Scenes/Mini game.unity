@@ -3242,7 +3242,7 @@ MonoBehaviour:
   winRangeMin: 50
   winRangeMax: 60
   minFillSpeed: 1
-  maxFillSpeed: 10
+  maxFillSpeed: 15
   fillInterval: 0.25
   tooLittleVideoClip: {fileID: 32900000, guid: 834c2f94603a0a24fa47c739ba00b83d, type: 3}
   tooMuchVideoClip: {fileID: 32900000, guid: a3367fc633215224f8adc7e3c6b847c3, type: 3}

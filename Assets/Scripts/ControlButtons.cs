@@ -16,11 +16,22 @@ public class ControlButtons : MonoBehaviour
     [SerializeField] private GameObject pauseCanvas;
     [SerializeField] private VideoPlayer videoPlayer;
 
+
     public void SwitchTo()
     {
         LocalizationSettings.SelectedLocale = targetLocale;
     }
 
+    public void Response()
+    {
+        StartCoroutine(OpenURLWithDelay(1.0f));
+    }
+
+    private IEnumerator OpenURLWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Application.OpenURL("https://docs.google.com/forms/d/e/1FAIpQLSdGvOULRR2j2Sld_WfdQvxGAm8W2bRI5TpqpOu_Vj2l2keoFA/viewform");
+    }
 
     public void LoadSceneWithDelay(float delay)
     {
@@ -60,8 +71,6 @@ public class ControlButtons : MonoBehaviour
 
         if (!videoPlayer.isPlaying) { videoPlayer.Play(); }
      
-
-      
     }
 }
 //
