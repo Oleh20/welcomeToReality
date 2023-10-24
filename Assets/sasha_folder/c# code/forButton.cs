@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
@@ -163,7 +164,6 @@ public class forButton : MonoBehaviour
         gameObject.GetComponentInChildren<Text>().text = ShouText[nummeroftext];
 
      
-       MakeButtonOff();
 
 
     }
@@ -179,9 +179,9 @@ public class forButton : MonoBehaviour
     }
     public void MakeButtonOff()
     {
-        if (gameObject.GetComponentInChildren<Text>().text == "No translation found for '' in UI Text" || gameObject.GetComponentInChildren<Text>().text == null) { button.gameObject.SetActive(false);  }
+        if (Regex.IsMatch(gameObject.GetComponentInChildren<Text>().text , "No translation found for ")) { button.gameObject.SetActive(false); }
        
-
+        
 
     }
     public void buttonIsActiv() { button.gameObject.SetActive(true); }

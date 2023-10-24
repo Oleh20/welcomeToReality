@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2555565930659840
-    m_Localized: But he passed by
+    m_Localized: i only passed by
     m_Metadata:
       m_Items: []
   - m_Id: 2559667616038912
@@ -94,14 +94,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2655200745570304
-    m_Localized: Nicely
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2655291845853184
-    m_Localized: "\u041C\u043E\u0433\u043B\u043E \u0431\u0443\u0442\u0438 \u0456
-      \u043A\u0440\u0430\u0449\u0435, \u0430\u043B\u0435 \u043C\u0435\u043D\u0456
-      \u0446\u044F \u043F\u043E\u0433\u043E\u0434\u0430 \u0442\u0430\u043A\u043E\u0436
-      \u0434\u043E \u0432\u043F\u043E\u0434\u043E\u0431\u0438"
+    m_Localized: It could have been better, but I also like this weather
     m_Metadata:
       m_Items: []
   - m_Id: 2655349525921792

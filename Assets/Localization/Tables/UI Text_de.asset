@@ -27,35 +27,35 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 30658972045312
-    m_Localized: "W\xE4hlen Sie eine Sprache"
+    m_Localized: "W\xE4hlen Sie die Sprache"
     m_Metadata:
       m_Items: []
   - m_Id: 30793458208768
-    m_Localized: Eingang
+    m_Localized: Ausgang
     m_Metadata:
       m_Items: []
   - m_Id: 1824373442822144
-    m_Localized: Also
+    m_Localized: Ja
     m_Metadata:
       m_Items: []
   - m_Id: 1824469978923008
-    m_Localized: Nicht
+    m_Localized: Nein
     m_Metadata:
       m_Items: []
   - m_Id: 2555565930659840
-    m_Localized: Aber er ging vorbei
+    m_Localized: ich bin nur vorbei gegangen
     m_Metadata:
       m_Items: []
   - m_Id: 2559667616038912
-    m_Localized: Ja, wir sollten
+    m_Localized: "Ja, wir m\xFCssen"
     m_Metadata:
       m_Items: []
   - m_Id: 2559671537713152
-    m_Localized: Genau wie du
+    m_Localized: Gleich wie du
     m_Metadata:
       m_Items: []
   - m_Id: 2561004328140800
-    m_Localized: "\xC4h, Junge, es ist schwer, ich w\xE4re lieber zu Hause"
+    m_Localized: "\xC4h, Kumpel, es ist schwer, ich w\xE4re lieber zu Hause sein"
     m_Metadata:
       m_Items: []
   - m_Id: 2573656030920704
@@ -63,7 +63,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2573733201920000
-    m_Localized: "Zeit, dich zu zerst\xF6ren"
+    m_Localized: "Zeit, dich zerst\xF6ren"
     m_Metadata:
       m_Items: []
   - m_Id: 2585597168271360
@@ -83,7 +83,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2585601962360832
-    m_Localized: "Nun, Sie haben keine Wahl, also m\xFCssen Sie spielen."
+    m_Localized: "Nun, Sie haben keine Wahl, also Sie m\xFCssen  spielen."
     m_Metadata:
       m_Items: []
   - m_Id: 2654943487934464
@@ -91,15 +91,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2655059649183744
-    m_Localized: "Doch wer kommuniziert im 21. Jahrhundert \xFCber das Wetter?"
+    m_Localized: "wer eigentlich kommuniziert im 21. Jahrhundert \xFCber das Wetter?"
     m_Metadata:
       m_Items: []
   - m_Id: 2655200745570304
-    m_Localized: "Sch\xF6n"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2655291845853184
-    m_Localized: "Es h\xE4tte besser sein k\xF6nnen, aber ich mag dieses Wetter auch"
+    m_Localized: "Es h\xE4tte besser sein k\xF6nnen, aber mir gef\xE4llt dieses Wetter
+      auch"
     m_Metadata:
       m_Items: []
   - m_Id: 2655349525921792
@@ -107,7 +104,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2656429273989120
-    m_Localized: "Nein, f\xFCttere die Fische"
+    m_Localized: "Nein, die Fische f\xFCtteren"
     m_Metadata:
       m_Items: []
   - m_Id: 2656515039117312
@@ -115,11 +112,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2656600368037888
-    m_Localized: Die gleichen Super-Geheimdokumente?
+    m_Localized: Die Super-Geheimdokumente?
     m_Metadata:
       m_Items: []
   - m_Id: 2657082645889024
-    m_Localized: Nein, der Diplomat hat Kekse
+    m_Localized: Nein, im Diplomat liegen Keksen
     m_Metadata:
       m_Items: []
   - m_Id: 2657180855517184
@@ -131,7 +128,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2657396883144704
-    m_Localized: No, I changed my mind
+    m_Localized: nein, ich habe meine meinung gewechselt
     m_Metadata:
       m_Items: []
   - m_Id: 2941097055567872
@@ -143,7 +140,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2665692505788416
-    m_Localized: Start
+    m_Localized: Anfang
     m_Metadata:
       m_Items: []
   - m_Id: 2665739842703360
@@ -155,29 +152,29 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2667575945416704
-    m_Localized: Versuchen Sie es erneut
+    m_Localized: Versuchen Sie es nochmal
     m_Metadata:
       m_Items: []
   - m_Id: 2687196584955904
-    m_Localized: 'Sie sind sicher, dass Sie beenden wollen?
+    m_Localized: 'Sind Sie sicher, dass Sie beenden wollen?
 
       Ihr Fortschritt
       wird nicht gespeichert!'
     m_Metadata:
       m_Items: []
   - m_Id: 3034116001841152
-    m_Localized: "Die Welt steht vor gro\xDFen Schwierigkeiten ... Afrika hat den
-      USA den Krieg erkl\xE4rt. Bald treffen sich zwei Agenten. Ihr Ziel ist es,
+    m_Localized: "Die Welt steht vor gro\xDFen Schwierigkeiten ... Afrika hat mit
+      dem USA den Krieg begonnen. Bald treffen sich zwei Agenten. Ihr Ziel ist es,
       miteinander zu verhandeln und geheime Dokumente auszutauschen, die diesen Krieg
       beenden k\xF6nnen. Es liegt also alles in Ihren H\xE4nden!"
     m_Metadata:
       m_Items: []
   - m_Id: 3036922062520320
-    m_Localized: "Willst du mir nicht sagen, wie sp\xE4t es ist?"
+    m_Localized: "Kannst du mir bitte sagen, wie sp\xE4t es ist?"
     m_Metadata:
       m_Items: []
   - m_Id: 3045853216325632
-    m_Localized: Sollen wir einen Spaziergang machen?
+    m_Localized: "M\xF6chten wir einen Spaziergang machen?"
     m_Metadata:
       m_Items: []
   - m_Id: 3045866331914240
@@ -185,7 +182,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3048027879063552
-    m_Localized: "Wie gef\xE4llt dir das Wetter heute?"
+    m_Localized: "Gef\xE4llt dir das Wetter heute?"
     m_Metadata:
       m_Items: []
   - m_Id: 3048043276353536
@@ -197,7 +194,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3048299766431744
-    m_Localized: "Sollen wir uns \xE4ndern?"
+    m_Localized: Lass uns die tauschen?
     m_Metadata:
       m_Items: []
   - m_Id: 3277510024314880
@@ -226,7 +223,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3337434995838976
-    m_Localized: Speisekarte
+    m_Localized: Menu
     m_Metadata:
       m_Items: []
   - m_Id: 4784820838420480

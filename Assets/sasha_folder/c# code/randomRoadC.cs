@@ -115,6 +115,11 @@ public class randomRoadC : MonoBehaviour
                     allBT[i].GetComponent<forButton>().buttonIsActiv();
 
                 }
+                for (int i = 0; i < allBT.Length; i++)
+                {
+                    allBT[i].GetComponent<forButton>().MakeButtonOff();
+
+                }
 
 
                 timer.GetComponent<timer10>().maketimeractiv();
