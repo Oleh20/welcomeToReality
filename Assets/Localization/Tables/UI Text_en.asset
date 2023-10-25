@@ -66,10 +66,6 @@ MonoBehaviour:
     m_Localized: Time to destroy you
     m_Metadata:
       m_Items: []
-  - m_Id: 2585597168271360
-    m_Localized: Who are you?
-    m_Metadata:
-      m_Items: []
   - m_Id: 2585599911346176
     m_Localized: Well, in this game you will have to decide the fate of the whole
       world, and the end of this game will depend only on you. You have the right
