@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 31329570816
-    m_Localized: "Wybierz j\u0119zyk gry"
+    m_Localized: "Wybierz j\u0119zyk"
     m_Metadata:
       m_Items: []
   - m_Id: 23392420057088
@@ -35,15 +35,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1824373442822144
-    m_Localized: "Wi\u0119c"
+    m_Localized: Tak
     m_Metadata:
       m_Items: []
   - m_Id: 1824469978923008
-    m_Localized: NIE
+    m_Localized: Nie
     m_Metadata:
       m_Items: []
   - m_Id: 2555565930659840
-    m_Localized: "Ale on min\u0105\u0142"
+    m_Localized: "Po prostu przechodzi\u0142 w pobli\u017Cu"
     m_Metadata:
       m_Items: []
   - m_Id: 2559667616038912
@@ -55,7 +55,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2561004328140800
-    m_Localized: "Ech, ch\u0142opie, trudno, wol\u0119 by\u0107 w domu"
+    m_Localized: "Ech, ch\u0142opie, trudna, wola\u0142bym by\u0107 w domu"
     m_Metadata:
       m_Items: []
   - m_Id: 2573656030920704
@@ -71,21 +71,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2585599911346176
-    m_Localized: "C\xF3\u017C, w tej grze b\u0119dziesz musia\u0142 zdecydowa\u0107
-      o losach ca\u0142ego \u015Bwiata, a koniec tej gry b\u0119dzie zale\u017Ca\u0142
-      tylko od Ciebie. Masz prawo decydowa\u0107, co jest dobre, a co z\u0142e. Pami\u0119taj,
-      \u017Ce ka\u017Cdy dokonany wyb\xF3r ma swoje konsekwencje. Czy jeste\u015B
-      gotowy, aby kontynuowa\u0107 swoj\u0105 podr\xF3\u017C?"
+    m_Localized: "C\xF3\u017C, w tej grze od Pa\u0144stwa b\u0119dzie zale\u017Ca\u0142
+      los ca\u0142ego \u015Bwiata. Masz prawo decydowa\u0107, co jest dobre, a co
+      z\u0142e. Pami\u0119taj, \u017Ce ka\u017Cdy dokonany wyb\xF3r ma swoje konsekwencje.
+      Czy jeste\u015B gotowy, aby kontynuowa\u0107 swoj\u0105 podr\xF3\u017C?"
     m_Metadata:
       m_Items: []
   - m_Id: 2585601085751296
-    m_Localized: "C\xF3\u017C, je\u015Bli Twoja odpowied\u017A brzmi tak, mo\u017Cemy
-      zaczyna\u0107."
+    m_Localized: "C\xF3\u017C, je\u015Bli Twoja odpowied\u017A tak, mo\u017Cemy zaczyna\u0107."
     m_Metadata:
       m_Items: []
   - m_Id: 2585601962360832
-    m_Localized: "C\xF3\u017C, nie masz wyboru, wi\u0119c b\u0119dziesz musia\u0142
-      gra\u0107."
+    m_Localized: "Ale szczerze m\xF3wi\u0105c, nie masz wyboru, wi\u0119c b\u0119dziesz
+      musia\u0142 gra\u0107."
     m_Metadata:
       m_Items: []
   - m_Id: 2654943487934464
@@ -93,31 +91,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2655059649183744
-    m_Localized: "Ale kto w XXI wieku komunikuje si\u0119 na temat pogody?"
+    m_Localized: Ale kto w XXI wieku gada o pogodzie?
     m_Metadata:
       m_Items: []
   - m_Id: 2655200745570304
-    m_Localized: "Mog\u0142o by\u0107 lepiej, ale te\u017C lubi\u0119 tak\u0105 pogod\u0119"
+    m_Localized: "Mog\u0142oby by\u0107 lepiej, ale spoko"
     m_Metadata:
       m_Items: []
   - m_Id: 2655349525921792
-    m_Localized: "Tak, dlatego przyprowadzi\u0142em tego dyplomat\u0119"
+    m_Localized: "Tak, dlatego przynios\u0142em t\u0105 dyplomat\u0119"
     m_Metadata:
       m_Items: []
   - m_Id: 2656429273989120
-    m_Localized: "Nie, nakarm ryb\u0119"
+    m_Localized: "Nie, karmi\u0107 ryb\u0119"
     m_Metadata:
       m_Items: []
   - m_Id: 2656515039117312
-    m_Localized: "\u015Awiata nie da si\u0119 uratowa\u0107!"
+    m_Localized: "\u015Awiata nie da si\u0119  ju\u017C uratowa\u0107!"
     m_Metadata:
       m_Items: []
   - m_Id: 2656600368037888
-    m_Localized: Te same super duperelowane tajne dokumenty?
+    m_Localized: Te same super tajne dokumenty?
     m_Metadata:
       m_Items: []
   - m_Id: 2657082645889024
-    m_Localized: Nie, dyplomata ma ciasteczka
+    m_Localized: "Nie w dyplomacie s\u0105 ciasteczka"
     m_Metadata:
       m_Items: []
   - m_Id: 2657180855517184
@@ -133,7 +131,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2941097055567872
-    m_Localized: Czego chcesz?
+    m_Localized: Czego Pan chce?
     m_Metadata:
       m_Items: []
   - m_Id: 2665560842391552
@@ -149,11 +147,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2667424598151168
-    m_Localized: Biegnij dalej
+    m_Localized: Klikaj
     m_Metadata:
       m_Items: []
   - m_Id: 2667575945416704
-    m_Localized: "Spr\xF3buj ponownie"
+    m_Localized: "Spr\xF3buj jeszcze raz"
     m_Metadata:
       m_Items: []
   - m_Id: 2687196584955904
@@ -163,14 +161,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3034116001841152
     m_Localized: "\u015Awiat jest na kraw\u0119dzi wielkich k\u0142opot\xF3w... Afryka
-      wypowiedzia\u0142a wojn\u0119 USA. Wkr\xF3tce spotyka si\u0119 dw\xF3ch agent\xF3w,
-      kt\xF3rych celem s\u0105 wzajemne negocjacje i wymiana tajnych dokument\xF3w,
+      wypowiedzia\u0142a wojn\u0119 USA. wkr\xF3tce spotkaj\u0105 si\u0119 dw\xF3ch
+      agent\xF3w, celem kt\xF3rych jest negocjacja i wymiana tajnymi dokumentami,
       kt\xF3re mog\u0105 powstrzyma\u0107 t\u0119 wojn\u0119. Wszystko jest wi\u0119c
       w Twoich r\u0119kach!"
     m_Metadata:
       m_Items: []
   - m_Id: 3036922062520320
-    m_Localized: "Nie powiesz mi, kt\xF3ra jest godzina?"
+    m_Localized: "Czy m\xF3g\u0142by\u015B powiedzie\u0107 kt\xF3ra jest godzina?"
     m_Metadata:
       m_Items: []
   - m_Id: 3045853216325632
@@ -178,11 +176,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3045866331914240
-    m_Localized: "Jak si\u0119 tu dosta\u0142e\u015B?"
+    m_Localized: "Jak si\u0119 Pa\u0144stwo dot\u0105d dosta\u0142o si\u0119?"
     m_Metadata:
       m_Items: []
   - m_Id: 3048027879063552
-    m_Localized: "Jak podoba Ci si\u0119 dzisiejsza pogoda?"
+    m_Localized: "Czy podoba Ci si\u0119 pogoda dzisiaj?"
     m_Metadata:
       m_Items: []
   - m_Id: 3048043276353536
@@ -206,10 +204,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3335755151921152
-    m_Localized: "Gra zosta\u0142a opracowana przez:\nAutor pomys\u0142u, redaktor
-      i operator \u2013 Oleg Pagulych\nAktorzy \u2013 Oleksandr Dowhy i Oleksandr
-      K\u0142ymenko\nProgrami\u015Bci - Ruslan Pagulych i Oleksandr Klymenko\nRedaktorka
-      i testerka lokalizacji \u2013 Karina Medvedeva"
+    m_Localized: "Gra stworzona przez:\nAutor pomys\u0142u, redaktor i operator \u2013
+      Oleg Pagulych\nAktorzy \u2013 Oleksandr Dowhy i Oleksandr K\u0142ymenko\nProgrami\u015Bci
+      - Ruslan Pagulych i Oleksandr Klymenko\nRedaktorka i testerka lokalizacji \u2013
+      Karina Medvedeva"
     m_Metadata:
       m_Items: []
   - m_Id: 3336135847923712
@@ -219,7 +217,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3337075615289344
-    m_Localized: Opracowano 10.2023
+    m_Localized: Stworzono 10.2023
     m_Metadata:
       m_Items: []
   - m_Id: 3337434995838976
@@ -227,7 +225,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4784820838420480
-    m_Localized: "Tutaj mo\u017Cesz zostawi\u0107 recenzj\u0119 na temat naszej gry"
+    m_Localized: "Tutaj mo\u017Cesz zostawi\u0107 swoj\u0105 opinie o naszej gr\u0119"
     m_Metadata:
       m_Items: []
   references:

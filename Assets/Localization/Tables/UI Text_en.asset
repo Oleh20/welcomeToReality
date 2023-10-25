@@ -55,7 +55,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2561004328140800
-    m_Localized: Eh, boy, it's hard, I'd rather be at home
+    m_Localized: Eh, boy, it's hard time, I'd rather be at home
     m_Metadata:
       m_Items: []
   - m_Id: 2573656030920704
@@ -188,10 +188,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3335755151921152
-    m_Localized: 'The game is being developed by:
+    m_Localized: 'The game was developed by:
 
-      The author of the idea,
-      editor and operator - Oleg Pagulych
+      The author of the idea, editor
+      and operator - Oleg Pagulych
 
       Actors - Oleksandr Dovhiy and Oleksandr
       Klymenko
