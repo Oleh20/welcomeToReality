@@ -63,10 +63,6 @@ MonoBehaviour:
     m_Key: 0 Textsecond
     m_Metadata:
       m_Items: []
-  - m_Id: 2585597168271360
-    m_Key: 1 Textsecond
-    m_Metadata:
-      m_Items: []
   - m_Id: 2585599911346176
     m_Key: start intro
     m_Metadata:
