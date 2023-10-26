@@ -30,7 +30,7 @@ public class ControlButtons : MonoBehaviour
     private IEnumerator OpenURLWithDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        Application.OpenURL("https://docs.google.com/forms/d/e/1FAIpQLSdGvOULRR2j2Sld_WfdQvxGAm8W2bRI5TpqpOu_Vj2l2keoFA/viewform");
+        Application.OpenURL("https://docs.google.com/forms/d/e/1FAIpQLScAd1ruVGuVfvs1RP9GoYIXpFVur8PO0_-fn2obIT6M9L-6yw/viewform");
     }
 
     public void LoadSceneWithDelay(float delay)
