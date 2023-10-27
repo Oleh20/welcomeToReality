@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: pl
   m_SharedData: {fileID: 11400000, guid: 10d0927cb0995e54d87c32aae5886bf7, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 6948103771661795331
   m_TableData:
   - m_Id: 31329570816
     m_Localized: "Wybierz j\u0119zyk"
@@ -70,13 +71,14 @@ MonoBehaviour:
     m_Localized: "C\xF3\u017C, w tej grze od Pa\u0144stwa b\u0119dzie zale\u017Ca\u0142
       los ca\u0142ego \u015Bwiata. Masz prawo decydowa\u0107, co jest dobre, a co
       z\u0142e. Pami\u0119taj, \u017Ce ka\u017Cdy dokonany wyb\xF3r ma swoje konsekwencje.
-      Czy jeste\u015B gotowy, aby kontynuowa\u0107 swoj\u0105 podr\xF3\u017C?"
+      Czy jeste\u015B gotowy, aby kontynuowa\u0107 swoj\u0105 podr\xF3\u017C?\t\t\t\t\t\t"
     m_Metadata:
       m_Items: []
   - m_Id: 2585601085751296
     m_Localized: "C\xF3\u017C, je\u015Bli Twoja odpowied\u017A tak, mo\u017Cemy zaczyna\u0107."
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 6948103771661795331
   - m_Id: 2585601962360832
     m_Localized: "Ale szczerze m\xF3wi\u0105c, nie masz wyboru, wi\u0119c b\u0119dziesz
       musia\u0142 gra\u0107."
@@ -157,7 +159,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3034116001841152
     m_Localized: "\u015Awiat jest na kraw\u0119dzi wielkich k\u0142opot\xF3w... Afryka
-      wypowiedzia\u0142a wojn\u0119 USA. wkr\xF3tce spotkaj\u0105 si\u0119 dw\xF3ch
+      wypowiedzia\u0142a wojn\u0119 USA. Wkr\xF3tce spotkaj\u0105 si\u0119 dw\xF3ch
       agent\xF3w, celem kt\xF3rych jest negocjacja i wymiana tajnymi dokumentami,
       kt\xF3re mog\u0105 powstrzyma\u0107 t\u0119 wojn\u0119. Wszystko jest wi\u0119c
       w Twoich r\u0119kach!"
@@ -226,4 +228,8 @@ MonoBehaviour:
       m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 6948103771661795331
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00403f2a972f0900
